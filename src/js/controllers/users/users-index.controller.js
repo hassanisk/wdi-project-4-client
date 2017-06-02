@@ -11,9 +11,7 @@ function UserIndexCtrl(User, $http){
   .get('http://localhost:3000/api/users')
   .then(response => {
     vm.users = response.data;
-
     console.log(vm.users);
-    console.log(vm.users[1].posts);
   });
   // vm.delete  = tasksDelete;
   //

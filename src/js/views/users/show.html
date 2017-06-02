@@ -1,0 +1,10 @@
+<h1>Your profile</h1>
+<a ui-sref="#"><img  ng-src="{{ vm.user.image }}"></a>
+<div>
+  <h2>Name: {{ vm.user.username }}</h2>
+  <p>Email: {{ vm.user.email }}</p>
+</div>
+<div>
+  <button type="button" name="back" class="btn btn-warning" ui-sref="usersEdit({ id: main.user._id})">Edit</button>
+  <button type="button" class="btn btn-danger" ng-click="vm.userOpenModal()">Delete</button>
+</div>

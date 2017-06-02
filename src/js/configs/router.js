@@ -1,6 +1,6 @@
 angular
-  .module('gymApp')
-  .config(Router);
+.module('gymApp')
+.config(Router);
 
 Router.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'];
 function Router($stateProvider, $locationProvider, $urlRouterProvider){
@@ -15,20 +15,33 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/register',
     templateUrl: '/js/views/register.html',
     controller: 'RegisterCtrl',
-    controllerAs: 'register'
+    controllerAs: 'vm'
   })
   .state('login', {
     url: '/login',
     templateUrl: '/js/views/login.html',
     controller: 'LoginCtrl',
-    controllerAs: 'login'
+    controllerAs: 'vm'
   })
   .state('usersIndex', {
     url: '/users',
     templateUrl: '/js/views/users/index.html',
     controller: 'UsersIndexCtrl',
-    controllerAs: 'usersIndex'
-  });
+    controllerAs: 'vm'
+  })
+  .state('usersShow', {
+    url: '/users/:id',
+    templateUrl: '/js/views/users/show.html',
+    controller: 'UsersShowCtrl',
+    controllerAs: 'vm'
+  })
+  .state('usersEdit', {
+    url: '/users/:id/edit',
+    templateUrl: '/js/views/users/edit.html',
+    controller: 'UsersEditCtrl',
+    controllerAs: 'vm'
+  })
+;
 
   $urlRouterProvider.otherwise('/');
 }

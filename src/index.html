@@ -13,7 +13,16 @@
   <body ng-controller="MainCtrl as main">
     <main ui-view></main>
     <nav>
+      <li ng-hide="main.user" class="navhover">
+              <a ui-sref="register">Sign Up</a>
+            </li>
+            <li ng-hide="main.user" class="navhover">
+              <a ui-sref="login" >Sign In</a>
+            </li>
+            <li>
   <a ng-click="main.logout()" ng-show="main.user" class="f6 fw4 hover-white-70 no-underline black-70 dib ml2 pv2 ph3 pointer nav-link pointer bl">Logout</a>
+  </li>
     </nav>
+
   </body>
 </html>
