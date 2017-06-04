@@ -17,30 +17,6 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope) {
     vm.user = null;
     $state.go('login');
   });
-  //
-  // vm.exercises = [
-  //   {
-  //     name: 'biceps curls',
-  //     desc: 'this is a cool exercises',
-  //     rep: '10*10*10',
-  //     image: 'http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/hammer_cheat_curl_main.jpg',
-  //     level: 'easy'
-  //   },
-  //   {
-  //     name: 'biceps preach',
-  //     desc: 'this is a cool exercises',
-  //     rep: '10*10*10*10',
-  //     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-  //     level: 'hard'
-  //   },
-  //   {
-  //     name: 'biceps cable',
-  //     desc: 'this is a cool exercises',
-  //     rep: '10*10*10*10',
-  //     image: 'http://build-muscle-101.com/wp-content/uploads/2014/12/high-pulley-cable-curl-ex.jpg',
-  //     level: 'medium'
-  //   }
-  // ];
 
   $scope.myData = {};
   $scope.myData.exercises = [
@@ -76,6 +52,19 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope) {
 
 
   };
-
+  $scope.levels = [
+    {
+      name: 'Easy'
+    },
+    {
+      name: 'Intermediate'
+    },
+    {
+      name: 'Hard'
+    },
+    {
+      name: 'Beast Mode!'
+    }
+  ];
 
 }

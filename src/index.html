@@ -24,36 +24,24 @@
     </li>
   </nav>
 
-  <h3> Please select difficulties </h3>
-  <form name="myForm">
-    <label>
-      <input type="radio" ng-model="level.dif" value="easy">
-      Beginner
-    </label><br/>
-    <label>
-      <input type="radio" ng-model="level.dif" ng-value="specialValue">
-      Intermediate
-    </label><br/>
-    <label>
-      <input type="radio" ng-model="level.dif" value="hard">
-      Hard
-    </label><br/>
-    <label>
-      <input type="radio" ng-model="level.dif" value="beast">
-      Beast Mode ON!
-    </label><br/>
-  </form>
+<button type="button" ng-click="generate()" name="generate">generate</button>
 
+
+  <h3> Please select difficulties </h3>
+  <select class="select" name="select" ng-model="selected_level" ng-options="level.name for level in levels">
+<option value=""> Please select difficulties </option>
+  </select>
+selected level : {{ selected_level.name }}
 <h3>List of exercises</h3>
 <ul>
   <li ng-repeat="exercise in myData.exercises"
   ng-click="myData.doClick(exercise)">{{exercise.name}}</li>
 </ul>
-<p> Name: {{ name }}
+<p> Name: {{ name }}</p>
 <p>Desc: {{ desc }}</p>
 <p>Repetition: {{ rep }}</p>
 <p>Level: {{ level }}</p>
-<img ng-src="{{image}}">
+<img ng-src="{{image}}"><br>
 
 
 
