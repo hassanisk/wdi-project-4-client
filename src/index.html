@@ -23,8 +23,10 @@
       <a ng-click="main.logout()" ng-show="main.user" class="f6 fw4 hover-white-70 no-underline black-70 dib ml2 pv2 ph3 pointer nav-link pointer bl">Logout</a>
     </li>
   </nav>
-
-<button type="button" ng-click="generate()" name="generate">generate</button>
+  <div ng-repeat="exercise in myData.exercises">
+    <button type="button" ng-click="getRandomIndex()" name="generate">generate</button>
+  <p>{{myData.exercises[getRandomIndex(myData.exercises.length)]}}</p>
+</div>
 
 
   <h3> Please select difficulties </h3>

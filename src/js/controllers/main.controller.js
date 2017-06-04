@@ -18,6 +18,10 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope) {
     $state.go('login');
   });
 
+
+  $scope.getRandomIndex = function(length){
+    return Math.floor(Math.random() * length);
+  };
   $scope.myData = {};
   $scope.myData.exercises = [
     {
