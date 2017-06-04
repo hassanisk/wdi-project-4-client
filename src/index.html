@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html ng-app="gymApp">
-  <head>
-    <base href="/">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-    <meta charset="utf-8">
-    <title>Angular Stack Setup</title>
-    <!-- inject:js -->
-    <!-- endinject -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
-  <body ng-controller="MainCtrl as main">
-    <main ui-view></main>
-    <nav>
-      <li ng-hide="main.user" class="navhover">
-              <a ui-sref="register">Sign Up</a>
-            </li>
-            <li ng-hide="main.user" class="navhover">
-              <a ui-sref="login" >Sign In</a>
-            </li>
-            <li>
-  <a ng-click="main.logout()" ng-show="main.user" class="f6 fw4 hover-white-70 no-underline black-70 dib ml2 pv2 ph3 pointer nav-link pointer bl">Logout</a>
-  </li>
-    </nav>
+<head>
+  <base href="/">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  <meta charset="utf-8">
+  <title>Angular Stack Setup</title>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body ng-controller="MainCtrl as main">
+  <main ui-view></main>
+  <nav>
+    <li ng-hide="main.user" class="navhover">
+      <a ui-sref="register">Sign Up</a>
+    </li>
+    <li ng-hide="main.user" class="navhover">
+      <a ui-sref="login" >Sign In</a>
+    </li>
+    <li>
+      <a ng-click="main.logout()" ng-show="main.user" class="f6 fw4 hover-white-70 no-underline black-70 dib ml2 pv2 ph3 pointer nav-link pointer bl">Logout</a>
+    </li>
+  </nav>
 
-  </body>
+  <h3> Please select difficulties </h3>
+  <form name="myForm">
+    <label>
+      <input type="radio" ng-model="level.dif" value="easy">
+      Beginner
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="level.dif" ng-value="specialValue">
+      Intermediate
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="level.dif" value="hard">
+      Hard
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="level.dif" value="beast">
+      Beast Mode ON!
+    </label><br/>
+  </form>
+
+<h3>List of exercises</h3>
+<ul>
+  <li ng-repeat="exercise in myData.exercises"
+  ng-click="myData.doClick(exercise)">{{exercise.name}}</li>
+</ul>
+<p> Name: {{ name }}
+<p>Desc: {{ desc }}</p>
+<p>Repetition: {{ rep }}</p>
+<p>Level: {{ level }}</p>
+<img ng-src="{{image}}">
+
+
+
+
+
+</body>
 </html>
