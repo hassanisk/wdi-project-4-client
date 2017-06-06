@@ -5,75 +5,97 @@ angular
 Exercise.$inject = [];
 function Exercise() {
   const all = [{
-    bodypart: 'biceps',
+    bodypart: '1',
+    musclesname: 'Biceps',
     name: 'biceps curls',
     desc: 'this is an easy exercises',
     rep: '10*10*10',
     image: 'http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/hammer_cheat_curl_main.jpg',
-    level: 1
+    level: 1,
+    difficulty: 'easy'
   },{
-    bodypart: 'biceps',
+    bodypart: '1',
+    musclesname: 'Biceps',
     name: 'biceps preach',
     desc: 'this is a hard exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 3
+    level: 3,
+    difficulty: 'hard'
+
   },{
-    bodypart: 'biceps',
+    bodypart: '1',
+    musclesname: 'Biceps',
     name: 'biceps cable',
     desc: 'this is a medium exercises',
     rep: '10*10*10*10',
     image: 'http://build-muscle-101.com/wp-content/uploads/2014/12/high-pulley-cable-curl-ex.jpg',
-    level: 2
+    level: 2,
+    difficulty: 'medium'
+
   },{
-    bodypart: 'legs',
+    bodypart: '2',
+    musclesname: 'Legs',
     name: 'squat',
     desc: 'this is a hard exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 3
+    level: 3,
+    difficulty: 'hard'
   },{
-    bodypart: 'legs',
+    bodypart: '2',
+    musclesname: 'Legs',
     name: 'deadlift',
     desc: 'this is a hard exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 1
+    level: 1,
+    difficulty: 'easy'
   },{
-    bodypart: 'chest',
+    bodypart: '3',
+    musclesname: 'Chest',
     name: 'bench press',
     desc: 'this is a hard exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 2
+    level: 2,
+    difficulty: 'medium'
   },{
-    bodypart: 'abs',
+    bodypart: '4',
+    musclesname: 'Abs',
     name: 'crunches',
     desc: 'this is a easy exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 1
+    level: 1,
+    difficulty: 'easy'
   },{
-    bodypart: 'abs',
+    bodypart: '4',
+    musclesname: 'Abs',
     name: 'crunches',
     desc: 'this is a easy exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 3
+    level: 3,
+    difficulty: 'hard'
   },{
-    bodypart: 'shoulders',
+    bodypart: '5',
+    musclesname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a easy exercises',
     rep: '10*10*10*10',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 'medium'
+    level: 3,
+    difficulty: 'hard'
   },{
-    bodypart: 'triceps',
+    bodypart: '6',
+    musclesname: 'Triceps',
     name: 'triceps extension',
     desc: 'this is a easy exercises',
-    rep: '10*10*10*10',
+    rep: '5 sets of 12 reps',
     image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
-    level: 4
+    level: 4,
+    difficulty: 'savage'
   }];
   return {
     query() {
