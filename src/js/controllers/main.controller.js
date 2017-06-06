@@ -19,40 +19,30 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
     $state.go('login');
   });
 
-  $scope.myData.doClick = function(exercise) {
-    $scope.name = exercise.name;
-    $scope.desc = exercise.desc;
-    $scope.rep = exercise.rep;
-    $scope.image = exercise.image;
-    $scope.level = exercise.level;
-  };
-  $scope.getRandomIndex = function(){
-    var index = Math.floor(Math.random() * $scope.myData.exercises.length);
-    console.log(index);
-    $scope.item = $scope.myData.exercises[index];
-    console.log($scope.item);
-    console.log($scope.item.name);
-  };
+  vm.filterExercises = filterExercises;
+
+  // $scope.getRandomIndex = function(){
+  //   var index = Math.floor(Math.random() * $scope.myData.exercises.length);
+  //   console.log(index);
+  //   $scope.item = $scope.myData.exercises[index];
+  //   console.log($scope.item);
+  //   console.log($scope.item.name);
+  // };
 
   function filterExercises() {
+    // vm.filtered = [];
     const params = { name: vm.q };
     if (vm.useLevel) params.level = vm.level;
     if (vm.useBodypart) params.bodypart       = vm.bodypart;
     vm.filtered = filterFilter(vm.all, params);
   }
-  $scope.$watchGroup([
-    () => vm.q,
-    () => vm.level,
-    () => vm.useLevel,
-    () => vm.bodypart,
-    () => vm.useBodypart
-  ], filterExercises);
+  // $scope.$watchGroup([
+  //   () => vm.q,
+  //   () => vm.level,
+  //   () => vm.useLevel,
+  //   () => vm.bodypart,
+  //   () => vm.useBodypart
+  // ], filterExercises);
 
-  vm.filterExercises = filterExercises;
-
-
-
-
-
-
+  // vm.filterExercises = filterExercises;
 }

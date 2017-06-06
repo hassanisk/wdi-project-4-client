@@ -4,6 +4,7 @@ angular
 
 Exercise.$inject = [];
 function Exercise() {
+
   const all = [{
     bodypart: '1',
     musclesname: 'Biceps',
@@ -97,9 +98,11 @@ function Exercise() {
     level: 4,
     difficulty: 'savage'
   }];
+
   return {
     query() {
       return all;
     }
   };
+
 }

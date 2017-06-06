@@ -14,7 +14,6 @@
 <body ng-controller="MainCtrl as main">
 
 
-  <input type="text" class="search" ng-model="main.q" placeholder="Search...">
 
   <main ui-view></main>
   <nav>
@@ -29,6 +28,7 @@
     </li>
   </nav>
   <input type="text" class="search" ng-model="main.q" placeholder="Search...">
+  <button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button>
 
   <input type="checkbox" id="level" ng-model="main.useLevel">
   <label for="level">level</label>
@@ -37,38 +37,24 @@
   <label for="bodypart">Select bodypart</label>
   <input type="range" ng-model="main.bodypart" min="1" max="6" ng-disabled="!main.useBodypart">
   <div ng-repeat="exercise in main.filtered">
-    <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
     <h2>{{ exercise.name | uppercase | limitTo: 14}}...</h2>
     <p>description :{{ exercise.desc }} </p>
-    <p>Strength <strong>{{ exercise.difficulty }}</strong></p>
+    <p>Level <strong>{{ exercise.difficulty }}</strong></p>
     <p>Bodypart  <strong>{{ exercise.musclesname }}</strong></p>
+    <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
+
   </div>
 
 
 
 
 
-  <h3>Please select Level</h3>
-  <label for="">Small</label>
-  <input name="size" type="radio" ng-model="vm.easy" value="easy">
-  <label class="sizeText" for="">Medium</label>
-  <input name="size" type="radio" ng-model="vm.medium" value="medium">
-  <label class="sizeText" for="">Hard</label>
-  <input name="size" type="radio" ng-model="vm.hard" value="hard"><br>
-  selected level : {{ selected_level }}<br>
-
-  <h3> Please select bodypart </h3>
-  <select class="select" name="select" ng-model="selected_bodypart" ng-options="bodypart.name for bodypart in bodyparts">
-    <option value=""> Please select bodypart </option>
-  </select><br>
-  selected body : {{ selected_bodypart.name }}<br>
-  <button type="button" ng-click="getRandomIndex()" name="generate" id="submitButton">generate</button>
-
+<!--
   <p> Name: {{ item.name }}</p>
   <p>Desc: {{ item.desc }}</p>
   <p>Repetition: {{ item.rep }}</p>
   <p>Level: {{ item.level }}</p>
-  <img ng-src="{{item.image}}"><br>
+  <img ng-src="{{item.image}}"><br> -->
 
 </body>
 </html>
