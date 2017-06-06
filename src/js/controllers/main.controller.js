@@ -21,28 +21,44 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
 
   vm.filterExercises = filterExercises;
 
-  // $scope.getRandomIndex = function(){
-  //   var index = Math.floor(Math.random() * $scope.myData.exercises.length);
-  //   console.log(index);
-  //   $scope.item = $scope.myData.exercises[index];
-  //   console.log($scope.item);
-  //   console.log($scope.item.name);
-  // };
-
   function filterExercises() {
-    // vm.filtered = [];
+    vm.final = [];
+    var randomItem = [] ;
     const params = { name: vm.q };
     if (vm.useLevel) params.level = vm.level;
     if (vm.useBodypart) params.bodypart       = vm.bodypart;
     vm.filtered = filterFilter(vm.all, params);
-  }
-  // $scope.$watchGroup([
-  //   () => vm.q,
-  //   () => vm.level,
-  //   () => vm.useLevel,
-  //   () => vm.bodypart,
-  //   () => vm.useBodypart
-  // ], filterExercises);
 
-  // vm.filterExercises = filterExercises;
+    if (vm.level === 1 ) {
+      // console.log(vm.filtered);
+      for(var e=0; e < 3; e++) {
+        var randomIndex = Math.floor(Math.random() * vm.filtered.length);
+        var item = vm.filtered.splice(randomIndex, 1);
+        randomItem=item[0];
+        // console.log(item);
+        vm.final.push(randomItem);
+        console.log(vm.final);
+      }
+    }else if (vm.level === 2 ) {
+      for(var m=0; m < 4; m++)
+      newrandomItem = vm.filtered[Math.floor(Math.random()*vm.filtered.length)] ;
+      vm.final.push(newrandomItem);
+    }else if (vm.level === 3 ) {
+      for(var h=0; h < 5; h++)
+      newrandomItem = vm.filtered[Math.floor(Math.random()*vm.filtered.length)] ;
+      vm.final.push(newrandomItem);
+    }  else  {
+      for(var s=0; s < 6; s++)
+      newrandomItem = vm.filtered[Math.floor(Math.random()*vm.filtered.length)] ;
+      vm.final.push(newrandomItem);
+
+    }
+
+    // console.log(newrandomItem);
+    // console.log(vm.final);
+
+
+  }
+
+
 }

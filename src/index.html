@@ -28,15 +28,21 @@
     </li>
   </nav>
   <input type="text" class="search" ng-model="main.q" placeholder="Search...">
+
   <button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button>
+
 
   <input type="checkbox" id="level" ng-model="main.useLevel">
   <label for="level">level</label>
-  <input type="range" ng-model="main.level" min="1" max="4" ng-disabled="!main.useLevel">
+  <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel">
+
+
   <input type="checkbox" id="bodypart" ng-model="main.useBodypart">
   <label for="bodypart">Select bodypart</label>
   <input type="range" ng-model="main.bodypart" min="1" max="6" ng-disabled="!main.useBodypart">
-  <div ng-repeat="exercise in main.filtered">
+
+
+  <div ng-repeat="exercise in main.final">
     <h2>{{ exercise.name | uppercase | limitTo: 14}}...</h2>
     <p>description :{{ exercise.desc }} </p>
     <p>Level <strong>{{ exercise.difficulty }}</strong></p>
