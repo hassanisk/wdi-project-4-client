@@ -21,19 +21,19 @@
 </div>
 </div>
 
-  <div   ui-sref="workoutsShow" class="mw6 center" ng-repeat="exercise in main.final">
-    <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-    <div class="dtc w2 w3-ns v-mid">
-      <img ui-sref="workoutsShow" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}"  class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
-    </div>
-    <div class="dtc v-mid pl3">
-      <h1 class="f6 f5-ns fw6 lh-title black mv0" ui-sref="workoutsShow" >{{ exercise.name | uppercase}}</h1>
-      <h2 class="f6 fw4 mt0 mb0 black-60" ui-sref="workoutsShow" >{{ exercise.desc | limitTo : 14}}...</h2>
-    </div>
-    <div class="dtc v-mid">
-      <form class="w-100 tr">
-        <button class="f6 button-reset bg-white ba b--black-10 dim pointer pv1 black-60" type="submit">Favourite</button>
-      </form>
-    </div>
-  </article>
+  <div class="mw6 center" ng-repeat="exercise in main.final track by $index">
+    <a class="dt w-100 bb b--black-05 pb2 mt2" ui-sref="exerciseShow({ id: {{ $index }} })">
+      <div class="dtc w2 w3-ns v-mid">
+        <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}"  class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
+      </div>
+      <div class="dtc v-mid pl3">
+        <h1 class="f6 f5-ns fw6 lh-title black mv0">{{ exercise.name | uppercase}}</h1>
+        <h2 class="f6 fw4 mt0 mb0 black-60">{{ exercise.desc | limitTo : 14}}...</h2>
+      </div>
+      <div class="dtc v-mid">
+        <form class="w-100 tr">
+          <button class="f6 button-reset bg-white ba b--black-10 dim pointer pv1 black-60" type="submit">Favourite</button>
+        </form>
+      </div>
+    </a>
   </div>

@@ -42,19 +42,25 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controllerAs: 'vm'
   })
   .state('workoutsIndex', {
-    url: '/workoutsgenerater/',
-    templateUrl: '/js/views/workouts/workouts.html',
+    url: '/workouts',
+    templateUrl: '/js/views/workouts/index.html',
     controller: 'MainCtrl',
     controllerAs: 'vm'
   })
   .state('workoutsShow', {
-    url: '/workoutsgenerater/:id',
+    url: '/workouts/:id',
     templateUrl: '/js/views/workouts/show.html',
     controller: 'WorkoutShowCtrl',
     controllerAs: 'vm'
   })
+  .state('exerciseShow', {
+    url: '/exercises/:id',
+    templateUrl: '/js/views/exercises/show.html',
+    controller: 'ExerciseShowCtrl',
+    controllerAs: 'vm'
+  })
   .state('dietsIndex', {
-    url: '/diets/',
+    url: '/diets',
     templateUrl: '/js/views/diets/diets.html'
   })
   .state('contactIndex', {

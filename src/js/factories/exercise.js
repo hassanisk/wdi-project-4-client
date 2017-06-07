@@ -1090,6 +1090,13 @@ function Exercise() {
   return {
     query() {
       return all;
+    },
+    get(id) {
+      const exercise = all[id];
+      console.log(exercise)
+      return new Promise(resolve => {
+        return resolve(exercise);
+      });
     }
   };
 
