@@ -41,6 +41,20 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'UsersEditCtrl',
     controllerAs: 'vm'
   })
+  .state('workoutsIndex', {
+    url: '/workoutsgenerater/',
+    templateUrl: '/js/views/workouts/workouts.html',
+    controller: 'MainCtrl',
+    controllerAs: 'vm'
+  })
+  .state('dietsIndex', {
+    url: '/diets/',
+    templateUrl: '/js/views/diets/diets.html'
+  })
+  .state('contactIndex', {
+    url: '/contact/',
+    templateUrl: '/js/views/contact/contact.html'
+  })
 ;
 
   $urlRouterProvider.otherwise('/');
