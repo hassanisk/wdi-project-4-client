@@ -21,9 +21,6 @@
 
 
   <div ng-repeat="exercise in main.final">
-    <h2>{{ exercise.name | uppercase | limitTo: 14}}...</h2>
-    <p>description :{{ exercise.desc }} </p>
-    <p>Level <strong>{{ exercise.difficulty }}</strong></p>
-    <p>Bodypart  <strong>{{ exercise.musclesname }}</strong></p>
-    <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
+    <h2 ui-sref="workoutsShow" >{{ exercise.name | uppercase | limitTo: 14}}...</h2>
+    <img ui-sref="workoutsShow" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
   </div>

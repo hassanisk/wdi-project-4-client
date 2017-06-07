@@ -47,6 +47,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'MainCtrl',
     controllerAs: 'vm'
   })
+  .state('workoutsShow', {
+    url: '/workoutsgenerater/:id',
+    templateUrl: '/js/views/workouts/show.html',
+    controller: 'WorkoutShowCtrl',
+    controllerAs: 'vm'
+  })
   .state('dietsIndex', {
     url: '/diets/',
     templateUrl: '/js/views/diets/diets.html'
@@ -54,6 +60,10 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   .state('contactIndex', {
     url: '/contact/',
     templateUrl: '/js/views/contact/contact.html'
+  })
+  .state('aboutIndex', {
+    url: '/about/',
+    templateUrl: '/js/views/about/about.html'
   })
 ;
 

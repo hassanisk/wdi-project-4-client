@@ -6,16 +6,16 @@ img {
 .bodypart .radio{
 
    display:inline-block;
-   width:200px;
-    height:200px;
+   width:100px;
+    height:100px;
 }
 //
 .bodypart input[type=radio]{
     display:none
 }
 .bodypart input[type=radio]:checked + .radio{
-  width:250px;
-   height:250px;
+  width:150px;
+   height:150px;
 border: 2px solid blue;
  }
 
