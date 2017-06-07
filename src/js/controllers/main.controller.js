@@ -28,16 +28,8 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
     var item;
     const params   = { name: vm.q };
     if (vm.useLevel) params.level       = vm.level;
-    if (vm.useBodypart) params.bodypart = vm.bodypart;
+    params.bodypart = vm.bodypart;
     vm.filtered    = filterFilter(vm.all, params);
-
-    var bodypart = document.getElementsByName('bodypart');
-    var bodyPartValue;
-    for(var i = 0; i < bodypart.length; i++){
-      if(bodypart[i].checked){
-        bodyPartValue = bodypart[i].value;
-      }
-    }
 
     if (vm.level === 1 ) {
       // console.log(vm.filtered);
