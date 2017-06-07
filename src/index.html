@@ -37,21 +37,21 @@
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel">
   <input type="checkbox" id="bodypart" ng-model="main.useBodypart">
   <label for="bodypart">Select bodypart</label>
-  <input type="range" ng-model="main.bodypart" min="1" max="6" ng-disabled="!main.useBodypart">
+  <!-- <input type="range" ng-model="main.bodypart" min="1" max="6" ng-disabled="!main.useBodypart"> -->
 
 <br>
 <div class="bodypart">
-  <input type="radio" name="bodypart" value="1" id="r1" checked="checked">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
   <label class="radio bicepsfocused" for="r1" id="biceps"></label>
-  <input type="radio" name="bodypart" value="2" id="r2">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="2" id="r2">
   <label class="radio legsfocused" for="r2" id="legs"></label>
-  <input type="radio" name="bodypart" value="3" id="r3">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="3" id="r3">
   <label class="radio chestfocused" for="r3" id="chest"></label>
-  <input type="radio" name="bodypart" value="4" id="r4">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="4" id="r4">
   <label class="radio absfocused" for="r4" id="abs"></label>
-  <input type="radio" name="bodypart" value="5" id="r5">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="5" id="r5">
   <label class="radio shouldersfocused" for="r5" id="shoulders"></label>
-  <input type="radio" name="bodypart" value="6" id="r6">
+  <input type="radio" ng-model="main.bodypart" name="bodypart" value="6" id="r6">
   <label class="radio tricepsfocused" for="r6" id="triceps"></label>
 </div>
 
