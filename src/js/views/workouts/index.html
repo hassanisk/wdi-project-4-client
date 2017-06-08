@@ -10,30 +10,20 @@
   <div class="relative">
     <img class="human" src="../images/human.png" alt="">
 
-    <img class="part absolute biLeft zo" src="../images/biceps-left.png" for="r1" alt="leftbiceps" ng-click="main.biceps()">
+    <img class="part absolute biceps zo" src="../images/biceps.png" for="r1" alt="biceps" ng-click="main.biceps()">
 
-    <!-- <img class="part absolute biRight zo" src="../images/biceps-right.png" for="r1" alt="rightbiceps" ng-click="main.biceps()"> -->
 
-    <img class="part absolute legsBack legs zo" src="../images/legs-back.png" for="r2" alt="legsback" ng-click="main.legsBack()">
-
-    <!-- <img class="part absolute legsFront legs zo" src="../images/legs-front.png" for="r2" alt="legsfront" ng-click="main.legsBack()"> -->
-
-    <img class="part absolute abs zo" src="../images/abs.png" for="r4" alt="abs" ng-click="main.abs()">
+    <img class="part absolute legs zo" src="../images/legs.png" for="r2" alt="legsback" ng-click="main.legs()">
 
     <img class="part absolute chest zo" src="../images/chest.png" for="r3" alt="chest" ng-click="main.chest()">
 
+    <img class="part absolute abs zo" src="../images/abs.png" for="r4" alt="abs" ng-click="main.abs()">
+
+    <img class="part absolute shoulders zo" src="../images/shoulders.png" for="r5" alt="shoulder" ng-click="main.shoulders()">
+
+    <img class="part absolute triceps zo" src="../images/triceps.png" for="r6" alt="triceps" ng-click="main.triceps()">
+
     <img class="part absolute back zo" src="../images/back.png" for="r7" alt="back" ng-click="main.back()">
-
-    <!-- <img class="part absolute triLeft zo" src="../images/triceps-left.png" for="r2" alt="trileft" ng-click="main.triceps()"> -->
-
-    <img class="part absolute triRight triceps zo" src="../images/triceps-right.png" for="r6" alt="triright" ng-click="main.triceps()">
-
-
-
-    <img class="part absolute shouldersr shoulders zo" src="../images/shoulders-right.png" for="r5" alt="triright" ng-click="main.shoulders()">
-
-
-
   </div>
 
   <div class=" mw6 bodypart ">
@@ -50,40 +40,8 @@
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="6" id="r6">
 
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="7" id="r7">
-
   </div>
-
 </div>
-
-
-
-
-
-<!-- <div class="images">
-<img class="part" src="../images/biceps-left.png" alt="leftbiceps">
-<img class="part" src="../images/biceps-right.png" alt="rightbiceps">
-<img class="part" src="../images/shoulders-left.png" alt="leftshoulder">
-<img class="part" src="../images/shoulders-right.png" alt="right shoulder">
-<img class="part" src="../images/leg-front.png" alt="legs front">
-<img class="part" src="../images/legs-back.png" alt="legs back">
-<img class="part" src="../images/back.png" alt="whole back">
-<img class="part" src="../images/abs.png" alt="abs">
-<img class="part" src="../images/triceps-left.png" alt="righttriceps">
-<img class="part" src="../images/triceps-right.png" alt="lefttriceps">
-
-</div> -->
-
-
-
-<!-- <img class="part" src="../images/biceps-right.png" alt="rightbiceps">
-<img class="part" src="../images/shoulders-left.png" alt="leftshoulder">
-<img class="part" src="../images/shoulders-right.png" alt="right shoulder">
-<img class="part" src="../images/leg-front.png" alt="legs front">
-<img class="part" src="../images/legs-back.png" alt="legs back">
-<img class="part" src="../images/back.png" alt="whole back">
-<img class="part" src="../images/abs.png" alt="abs">
-<img class="part" src="../images/triceps-left.png" alt="righttriceps">
-<img class="part" src="../images/triceps-right.png" alt="lefttriceps"> -->
 
 <div class="mw6 center" ng-repeat="exercise in main.final track by $index">
   <a class="dt w-100 bb b--black-05 pb2 mt2" ui-sref="exerciseShow({ id: {{ $index }} })">

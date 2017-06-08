@@ -67,7 +67,7 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
 
   vm.biceps = function() {
     console.log('clicked');
-    var bicep = document.getElementsByClassName('biLeft')[0];
+    var bicep = document.getElementsByClassName('biceps')[0];
     if (bicep.style.opacity === '1') {
       bicep.classList.toggle('opac');
       vm.bodypart = '';
@@ -78,8 +78,8 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = bicepButton.value;
     }
   };
-  vm.legsBack = function() {
-    var leg = document.getElementsByClassName('legsBack')[0];
+  vm.legs = function() {
+    var leg = document.getElementsByClassName('legs')[0];
     if (leg.style.opacity === '1') {
       leg.classList.toggle('opac');
       vm.bodypart = '';
