@@ -69,10 +69,10 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
     console.log('clicked');
     var bicep = document.getElementsByClassName('biLeft')[0];
     if (bicep.style.opacity === '1') {
-      bicep.style.opacity = 0;
+      bicep.classList.toggle('opac');
       vm.bodypart = '';
     } else {
-      bicep.style.opacity = 1;
+      bicep.classList.toggle('opac');
       var bicepButton = document.getElementById('r1');
       bicepButton.checked = true;
       vm.bodypart = bicepButton.value;
@@ -81,13 +81,37 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
   vm.legsBack = function() {
     var leg = document.getElementsByClassName('legsBack')[0];
     if (leg.style.opacity === '1') {
-      leg.style.opacity = 0;
+      leg.classList.toggle('opac');
       vm.bodypart = '';
     } else {
-      leg.style.opacity = 1;
+      leg.classList.toggle('opac');
       var legButton = document.getElementById('r2');
       legButton.checked = true;
       vm.bodypart = legButton.value;
+    }
+  };
+  vm.abs = function() {
+    var abs = document.getElementsByClassName('abs')[0];
+    if (abs.style.opacity === '1') {
+      abs.classList.toggle('opac');
+      vm.bodypart = '';
+    } else {
+      abs.classList.toggle('opac');
+      var absButton = document.getElementById('r4');
+      absButton.checked = true;
+      vm.bodypart = absButton.value;
+    }
+  };
+  vm.back = function() {
+    var back = document.getElementsByClassName('back')[0];
+    if (back.style.opacity === '1') {
+      back.classList.toggle('opac');
+      vm.bodypart = '';
+    } else {
+      back.classList.toggle('opac');
+      var backButton = document.getElementById('r5');
+      backButton.checked = true;
+      vm.bodypart = backButton.value;
     }
   };
 }
