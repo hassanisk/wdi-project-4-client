@@ -9,7 +9,7 @@ function ExerciseShowCtrl (Exercise, $stateParams) {
   Exercise
   .get($stateParams.id)
   .then(exercise => {
-    console.log(exercise)
+    console.log(exercise);
     vm.exercise = exercise;
   });
 }

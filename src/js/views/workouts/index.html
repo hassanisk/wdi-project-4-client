@@ -1,14 +1,22 @@
-<div class="mw6 center">
+<div class="mw6 center ">
+
   <input type="text" class="search" ng-model="main.q" placeholder="Search..."><br>
   <button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button><br>
   <input type="checkbox" id="level" ng-model="main.useLevel">
   <label for="level">level</label><br>
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
   <label for="bodypart">Select bodypart</label><br>
-  <div class="humanpng">
-    <img src="../images/human.png" alt="">
+
+  <div class="relative">
+    <img class="human" src="../images/human.png" alt="">
+    <div class="oppaaa">
+      <img class="part absolute biLeft" src="../images/biceps-left.png" alt="leftbiceps">
+    </div>
   </div>
-<div class="bodypart">
+</div>
+
+
+<div class=" mw6 bodypart">
   <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
   <label class="radio bicepsfocused" for="r1" id="biceps"></label>
   <input type="radio" ng-model="main.bodypart" name="bodypart" value="2" id="r2">
@@ -22,21 +30,46 @@
   <input type="radio" ng-model="main.bodypart" name="bodypart" value="6" id="r6">
   <label class="radio tricepsfocused" for="r6" id="triceps"></label>
 </div>
-</div>
 
-  <div class="mw6 center" ng-repeat="exercise in main.final track by $index">
-    <a class="dt w-100 bb b--black-05 pb2 mt2" ui-sref="exerciseShow({ id: {{ $index }} })">
-      <div class="dtc w2 w3-ns v-mid">
-        <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}"  class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
-      </div>
-      <div class="dtc v-mid pl3">
-        <h1 class="f6 f5-ns fw6 lh-title black mv0">{{ exercise.name | uppercase}}</h1>
-        <h2 class="f6 fw4 mt0 mb0 black-60">{{ exercise.desc | limitTo : 14}}...</h2>
-      </div>
-      <div class="dtc v-mid">
-        <form class="w-100 tr">
-          <button class="f6 button-reset bg-white ba b--black-10 dim pointer pv1 black-60" type="submit">Favourite</button>
-        </form>
-      </div>
-    </a>
-  </div>
+<!-- <div class="images">
+<img class="part" src="../images/biceps-left.png" alt="leftbiceps">
+<img class="part" src="../images/biceps-right.png" alt="rightbiceps">
+<img class="part" src="../images/shoulders-left.png" alt="leftshoulder">
+<img class="part" src="../images/shoulders-right.png" alt="right shoulder">
+<img class="part" src="../images/leg-front.png" alt="legs front">
+<img class="part" src="../images/legs-back.png" alt="legs back">
+<img class="part" src="../images/back.png" alt="whole back">
+<img class="part" src="../images/abs.png" alt="abs">
+<img class="part" src="../images/triceps-left.png" alt="righttriceps">
+<img class="part" src="../images/triceps-right.png" alt="lefttriceps">
+
+</div> -->
+
+
+
+<!-- <img class="part" src="../images/biceps-right.png" alt="rightbiceps">
+<img class="part" src="../images/shoulders-left.png" alt="leftshoulder">
+<img class="part" src="../images/shoulders-right.png" alt="right shoulder">
+<img class="part" src="../images/leg-front.png" alt="legs front">
+<img class="part" src="../images/legs-back.png" alt="legs back">
+<img class="part" src="../images/back.png" alt="whole back">
+<img class="part" src="../images/abs.png" alt="abs">
+<img class="part" src="../images/triceps-left.png" alt="righttriceps">
+<img class="part" src="../images/triceps-right.png" alt="lefttriceps"> -->
+
+<div class="mw6 center" ng-repeat="exercise in main.final track by $index">
+  <a class="dt w-100 bb b--black-05 pb2 mt2" ui-sref="exerciseShow({ id: {{ $index }} })">
+    <div class="dtc w2 w3-ns v-mid">
+      <img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}"  class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
+    </div>
+    <div class="dtc v-mid pl3">
+      <h1 class="f6 f5-ns fw6 lh-title black mv0">{{ exercise.name | uppercase}}</h1>
+      <h2 class="f6 fw4 mt0 mb0 black-60">{{ exercise.desc | limitTo : 14}}...</h2>
+    </div>
+    <div class="dtc v-mid">
+      <form class="w-100 tr">
+        <button class="f6 button-reset bg-white ba b--black-10 dim pointer pv1 black-60" type="submit">Favourite</button>
+      </form>
+    </div>
+  </a>
+</div>

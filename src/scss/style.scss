@@ -1,24 +1,45 @@
 // Import all of your scss files here
 img {
-  height: 800px;
-  width: 700px;
+  height:600px;
+  width: 600px;
+}
+.part{
+  width: 100px;
+  height: 100px;
+}
+
+.biLeft{
+  top: 130px;
+  left: 312px;
+  width: 29px;
+  height: 88px;
+  z-index: 2;
+      opacity: 0;
+}
+.biLeft:hover{
+  opacity: 1;
+  width: 30px;
+
+}
+.human{
+  z-index: -1;
 }
 
 .bodypart .radio{
 
-   display:inline-block;
-   width:100px;
-    height:100px;
+  display:inline-block;
+  width:100px;
+  height:100px;
 }
 //
 .bodypart input[type=radio]{
-    display:none
+  display:none
 }
 .bodypart input[type=radio]:checked + .radio{
   width:150px;
-   height:150px;
-border: 2px solid blue;
- }
+  height:150px;
+  border: 2px solid blue;
+}
 
 
 
@@ -40,5 +61,5 @@ border: 2px solid blue;
 
 .tricepsfocused a:focus
 {
-background: url("http://build-muscle-101.com/wp-content/uploads/2014/12/shoulder-muscles.jpg");
+  background: url("http://build-muscle-101.com/wp-content/uploads/2014/12/shoulder-muscles.jpg");
 }
