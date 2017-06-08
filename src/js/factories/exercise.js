@@ -1085,6 +1085,178 @@ function Exercise() {
     image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
     level: 4,
     difficulty: 'Beast Mode!'
+    //backk---------back----------
+  }, {
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'triceps extension',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/band-curl-arms-exercise_landscape.jpg',
+    level: 1,
+    difficulty: 'Easy'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Dumbbell Overhead Back Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.positivehealthwellness.com/wp-content/uploads/2017/07/Image-12-1.jpg',
+    level: 1,
+    difficulty: 'Easy'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Back Dip',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'http://www.elleman.vn/wp-content/uploads/2015/07/23/cac-bai-tap-the-duc-co-ban-wide-arm-dip.jpg',
+    level: 1,
+    difficulty: 'Easy'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Lying Back Extension (Skullcrusher)',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'http://bodybuilding-wizard.com/wp-content/uploads/2014/04/lying-triceps-extensions-skullcrushers.jpg',
+    level: 2,
+    difficulty: 'Medium!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Back Pushdown',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'http://robustclub.com/wp-content/uploads/2017/07/dhandle.jpg',
+    level: 2,
+    difficulty: 'Medium!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'V-Bar Pulldown',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'http://workoutlabs.com/wp-content/uploads/watermarked/V-Bar_Triangle_Bar_Lat_Pull_Downs.png',
+    level: 2,
+    difficulty: 'Medium!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 2,
+    difficulty: 'Medium!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 3,
+    difficulty: 'Hard'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 3,
+    difficulty: 'Hard'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 3,
+    difficulty: 'Hard'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 3,
+    difficulty: 'Hard'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 3,
+    difficulty: 'Hard'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
+  },{
+    bodypart: '7',
+    musclesname: 'Back',
+    name: 'Close-Grip Bench Press.',
+    desc: 'this is a Easy exercises',
+    rep: '5 sets of 12 reps',
+    image: 'https://www.bodybuilding.com/exercises/exerciseImages/sequences/23/Male/l/23_2.jpg',
+    level: 4,
+    difficulty: 'Beast Mode!'
   }];
 
   return {

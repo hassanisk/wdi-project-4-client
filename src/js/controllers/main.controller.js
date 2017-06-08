@@ -90,6 +90,18 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = legButton.value;
     }
   };
+  vm.chest = function() {
+    var chest = document.getElementsByClassName('chest')[0];
+    if (chest.style.opacity === '1') {
+      chest.classList.toggle('opac');
+      vm.bodypart = '';
+    } else {
+      chest.classList.toggle('opac');
+      var chestButton = document.getElementById('r3');
+      chestButton.checked = true;
+      vm.bodypart = chestButton.value;
+    }
+  };
   vm.abs = function() {
     var abs = document.getElementsByClassName('abs')[0];
     if (abs.style.opacity === '1') {
@@ -102,6 +114,30 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = absButton.value;
     }
   };
+  vm.shoulders = function() {
+    var shoulders = document.getElementsByClassName('shoulders')[0];
+    if (shoulders.style.opacity === '1') {
+      shoulders.classList.toggle('opac');
+      vm.bodypart = '';
+    } else {
+      shoulders.classList.toggle('opac');
+      var shouldersButton = document.getElementById('r5');
+      shouldersButton.checked = true;
+      vm.bodypart = shouldersButton.value;
+    }
+  };
+  vm.triceps = function() {
+    var triceps = document.getElementsByClassName('triceps')[0];
+    if (triceps.style.opacity === '1') {
+      triceps.classList.toggle('opac');
+      vm.bodypart = '';
+    } else {
+      triceps.classList.toggle('opac');
+      var tricepsButton = document.getElementById('r6');
+      tricepsButton.checked = true;
+      vm.bodypart = tricepsButton.value;
+    }
+  };
   vm.back = function() {
     var back = document.getElementsByClassName('back')[0];
     if (back.style.opacity === '1') {
@@ -109,9 +145,12 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = '';
     } else {
       back.classList.toggle('opac');
-      var backButton = document.getElementById('r5');
+      var backButton = document.getElementById('r7');
       backButton.checked = true;
       vm.bodypart = backButton.value;
     }
   };
+
+
+
 }
