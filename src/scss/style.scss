@@ -42,10 +42,23 @@ img {
   width: 111px;
   height: 62px;
 }
-.biLeft:hover, .legsBack:hover, .legsFront:hover, .abs:hover
+.tril{
+    top: 138px;
+    left: 49px;
+    width: 32px;
+    height: 80px
+}
+.back{
+top: 53px;
+left: 74px;
+width: 98px;
+height: 201px;
+}
+.biLeft:hover, .legsBack:hover, .legsFront:hover, .abs:hover, .chest:hover,.back:hover,.tril:hover
 {
   opacity: 1;
 }
+
 
 .human{
   z-index: -1;
