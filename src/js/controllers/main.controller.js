@@ -72,29 +72,22 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       bicep.style.opacity = 0;
       vm.bodypart = '';
     } else {
-      console.log(bicep);
       bicep.style.opacity = 1;
       var bicepButton = document.getElementById('r1');
-      console.log(bicepButton);
       bicepButton.checked = true;
       vm.bodypart = bicepButton.value;
-      console.log(vm.bodypart);
     }
   };
   vm.legsBack = function() {
-    console.log('clicked');
     var leg = document.getElementsByClassName('legsBack')[0];
     if (leg.style.opacity === '1') {
       leg.style.opacity = 0;
       vm.bodypart = '';
     } else {
-      console.log(leg);
       leg.style.opacity = 1;
       var legButton = document.getElementById('r2');
-      console.log(legButton);
       legButton.checked = true;
       vm.bodypart = legButton.value;
-      console.log(vm.bodypart);
     }
   };
 }

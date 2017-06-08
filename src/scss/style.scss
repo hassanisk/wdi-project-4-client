@@ -14,6 +14,12 @@ img {
   width: 29px;
   height: 88px;
 }
+.biRight{
+  top: 132px;
+  left: 434px;
+  width: 29px;
+  height: 82px
+}
 .legsBack{
   top: 244px;
   left: 80px;
@@ -42,19 +48,25 @@ img {
   width: 111px;
   height: 62px;
 }
-.tril{
-    top: 138px;
-    left: 49px;
-    width: 32px;
-    height: 80px
+.triLeft{
+  top: 138px;
+  left: 49px;
+  width: 32px;
+  height: 80px
+}
+.triRight{
+  top: 125px;
+  left: 161px;
+  width: 42px;
+  height: 96px;
 }
 .back{
-top: 53px;
-left: 74px;
-width: 98px;
-height: 201px;
+  top: 53px;
+  left: 74px;
+  width: 98px;
+  height: 201px;
 }
-.biLeft:hover, .legsBack:hover, .legsFront:hover, .abs:hover, .chest:hover,.back:hover,.tril:hover
+.biLeft:hover, .legsBack:hover, .legsFront:hover, .abs:hover, .chest:hover, .back:hover, .triLeft:hover, .biRight:hover, .triRight:hover
 {
   opacity: 1;
 }
