@@ -78,6 +78,7 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = bicepButton.value;
     }
   };
+
   vm.legs = function() {
     var leg = document.getElementsByClassName('legs')[0];
     if (leg.style.opacity === '1') {
@@ -90,6 +91,7 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = legButton.value;
     }
   };
+  
   vm.chest = function() {
     var chest = document.getElementsByClassName('chest')[0];
     if (chest.style.opacity === '1') {
@@ -102,6 +104,7 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = chestButton.value;
     }
   };
+
   vm.abs = function() {
     var abs = document.getElementsByClassName('abs')[0];
     if (abs.style.opacity === '1') {

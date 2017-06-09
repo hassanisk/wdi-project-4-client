@@ -18,6 +18,17 @@
     "angular": "^1.5.8",
     "angular-jwt": "^0.1.8",
     "angular-ui-router": "^0.3.2",
-    "angular-resource": "^1.5.9"
+    "angular-resource": "^1.5.9",
+    "angular-slick": "^0.2.1"
+  },
+  "overrides": {
+    "slick-carousel": {
+      "main": [
+        "slick/slick.css",
+        "slick/slick-theme.css",
+        "slick/slick.js",
+        "slick/fonts/*"
+      ]
+    }
   }
 }
