@@ -2,7 +2,7 @@
   <h1>Register</h1>
   <div class="mv3">
     <label class="db fw6 lh-copy f6" for="username">Username</label>
-    <input class="pl pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="username" ng-model="vm.user.username" placeholder="JohnDoe" required>
+    <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="username" ng-model="vm.user.username" placeholder="JohnDoe" required>
   </div>
   <div class="ng-message-error" ng-messages="vm.registerForm.username.$error" ng-show="(vm.registerForm.$submitted || vm.registerForm.username.$touched)">
     <p ng-message="required">This field is required</p>
@@ -10,11 +10,11 @@
 
   <div class="mv3">
     <label class="db fw6 lh-copy f6" for="Image">Image</label>
-    <input class="pl pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="image" ng-model="vm.user.image" placeholder="Paste Image address here">
+    <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="image" ng-model="vm.user.image" placeholder="Paste Image address here">
   </div>
   <div class="mv3">
     <label class="db fw6 lh-copy f6" for="email">Email</label>
-    <input class="pl pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email" ng-model="vm.user.email" ng-pattern="vm.emailValidate" placeholder="e.g. john@email.com" required>
+    <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="email" name="email" ng-model="vm.user.email" ng-pattern="vm.emailValidate" placeholder="e.g. john@email.com" required>
   </div>
   <div class="ng-message-error" ng-messages="vm.registerForm.email.$error" ng-show="(vm.registerForm.$submitted || vm.registerForm.email.$touched)">
     <p ng-message="required">This field is required</p>
@@ -22,7 +22,7 @@
   </div>
   <div class="mv3">
     <label class="db fw6 lh-copy f6" for="password">Password</label>
-    <input class="pl pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password" ng-model="vm.user.password" placeholder="Must be 6 characters long" required minlength="6">
+    <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="password" name="password" ng-model="vm.user.password" placeholder="Must be 6 characters long" required minlength="6">
   </div>
   <div class="ng-message-error" ng-messages="vm.registerForm.password.$error" ng-show="(vm.registerForm.$submitted || vm.registerForm.password.$touched)">
     <p ng-message="required">This field is required</p>
@@ -30,7 +30,7 @@
   </div>
   <div class="mv3">
     <label class="db fw6 lh-copy f6" for="password_confirmation">Password Confirmation</label>
-    <input class="pl pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password_confirmation" ng-model="vm.user.password_confirmation" placeholder="Password confirmation" required ng-pattern="vm.user.password">
+    <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="password" name="password_confirmation" ng-model="vm.user.password_confirmation" placeholder="Password confirmation" required ng-pattern="vm.user.password">
   </div>
   <div class="ng-message-error" ng-messages="vm.registerForm.password_confirmation.$error" ng-show="(vm.registerForm.$submitted || vm.registerForm.password_confirmation.$touched)">
     <p ng-message="required">This field is required</p>
