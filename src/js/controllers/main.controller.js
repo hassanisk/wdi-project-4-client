@@ -3,8 +3,8 @@ angular
 .controller('MainCtrl', MainCtrl);
 
 
-MainCtrl.$inject = ['$rootScope','CurrentUserService','$state','$scope', 'filterFilter', 'Exercise'];
-function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Exercise) {
+MainCtrl.$inject = ['$rootScope','CurrentUserService','$state','$scope', 'filterFilter', 'Exercise', '$timeout'];
+function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Exercise, $timeout) {
   const vm  = this;
   vm.all    = Exercise.query();
   $rootScope.$on('loggedIn', () => {
@@ -91,7 +91,7 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = legButton.value;
     }
   };
-  
+
   vm.chest = function() {
     var chest = document.getElementsByClassName('chest')[0];
     if (chest.style.opacity === '1') {
@@ -154,6 +154,8 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
     }
   };
 
-
+  $timeout(function() {
+    vm.ready = true;
+  }, 2000);
 
 }

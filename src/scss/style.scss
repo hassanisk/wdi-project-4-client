@@ -76,23 +76,28 @@ img {
   height:100px;
   opacity: 0;
 }
-//
+
 .bodypart input[type=radio]{
   display:none
 }
+
 .bodypart input[type=radio]:checked + .radio{
   width:150px;
   height:150px;
 }
-.bodypart input[type=radio]:checked + .radio{
 
+.bodypart input[type=radio]:checked + .radio{
   opacity: 1;
 }
 
 .slicksize{
-  width: 500px;
+  width: 100%;
+  margin: 0;
 }
-
+.cimgz{
+  width: 100%;
+  height: 500px;
+}
 
 #biceps{
   background: url("../images/biceps-left.png" ) no-repeat;
