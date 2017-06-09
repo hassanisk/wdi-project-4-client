@@ -1,7 +1,7 @@
-<div class="mw6 center ">
+<div class="mw6 center" >
 
   <input type="text" class="search" ng-model="main.q" placeholder="Search..."><br>
-  <button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button><br>
+  <a href="#show"><button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button></a><br>
   <input type="checkbox" id="level" ng-model="main.useLevel">
   <label for="level">level</label><br>
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
@@ -9,96 +9,45 @@
 
   <div class="relative">
     <img class="human" src="../images/human.png" alt="">
-
     <img class="part absolute biceps zo" src="../images/biceps.png" for="r1" alt="biceps" ng-click="main.biceps()">
-
-
     <img class="part absolute legs zo" src="../images/legs.png" for="r2" alt="legsback" ng-click="main.legs()">
-
     <img class="part absolute chest zo" src="../images/chest.png" for="r3" alt="chest" ng-click="main.chest()">
-
     <img class="part absolute abs zo" src="../images/abs.png" for="r4" alt="abs" ng-click="main.abs()">
-
     <img class="part absolute shoulders zo" src="../images/shoulders.png" for="r5" alt="shoulder" ng-click="main.shoulders()">
-
     <img class="part absolute triceps zo" src="../images/triceps.png" for="r6" alt="triceps" ng-click="main.triceps()">
-
     <img class="part absolute back zo" src="../images/back.png" for="r7" alt="back" ng-click="main.back()">
   </div>
 
   <div class=" mw6 bodypart ">
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="2" id="r2">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="3" id="r3">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="4" id="r4">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="5" id="r5">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="6" id="r6">
-
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="7" id="r7">
   </div>
 </div>
-
-<!-- <div class="mw6 center" ng-repeat="exercise in main.final track by $index">
-<a class="dt w-100 bb b--black-05 pb2 mt2" ui-sref="exerciseShow({ id: {{ $index }} })">
-<div class="dtc w2 w3-ns v-mid">
-<img ng-src="{{ exercise.image }}" alt="{{ exercise.name }}"  class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
-</div>
-<div class="dtc v-mid pl3">
-<h1 class="f6 f5-ns fw6 lh-title black mv0">{{ exercise.name | uppercase}}</h1>
-<h2 class="f6 fw4 mt0 mb0 black-60">{{ exercise.desc | limitTo : 14}}...</h2>
-</div>
-<div class="dtc v-mid">
-<form class="w-100 tr">
-<button class="f6 button-reset bg-white ba b--black-10 dim pointer pv1 black-60" type="submit">Favourite</button>
-</form>
-</div>
-</a>
-</div> -->
-
-  <!-- <slick infinite="true" slides-to-show="3" slides-to-scroll="3" dots="true" arrows="true" init-onload="true" data="ctrl.users" responsive="ctrl.breakpoints" -->
-
-<div ng-if="main.final && main.ready">
-  <slick infinite="true" slides-to-show="1" init-onload="true" data="main.final" slides-to-scroll="1"  autoplay="true" class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
-  <div ng-repeat="exercise in main.final track by $index">
-   <img class="db w-100 br2 br--top" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
-   <div class="pa2 ph3-ns pb3-ns">
-     <div class="dt w-100 mt1">
-       <div class="dtc">
-         <h1 class="f5 f4-ns mv0">{{ exercise.name | uppercase}}</h1>
-       </div>
-       <div class="dtc tr">
-         <h2 class="f5 mv0">{{ exercise.muscelesname }}</h2>
-       </div>
-     </div>
-     <p class="f6 lh-copy measure mt2 mid-gray">
-       {{ exercise.desc}}...
-     </p>
-   </div>
-
-   </div>
-
-</slick>
-  </div>
-<!--
-  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
-    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
-    <div class="pa2 ph3-ns pb3-ns">
-      <div class="dt w-100 mt1">
-        <div class="dtc">
-          <h1 class="f5 f4-ns mv0">Cat</h1>
-        </div>
-        <div class="dtc tr">
-          <h2 class="f5 mv0">$1,000</h2>
+<div id="show">
+  <div ng-if="main.final && main.ready">
+    <slick infinite="true" slides-to-show="1" init-onload="true" data="main.final" slides-to-scroll="1"  class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center ">
+      <div ng-repeat="exercise in main.final track by $index"  class="test">
+        <img class="db w-100 br2 br--top" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
+        <div class="pa2 ph3-ns pb3-ns">
+          <div class="dt w-100 mt1">
+            <div class="dtc">
+              <h1 class="f5 f4-ns mv0">{{ exercise.name | uppercase}}</h1>
+            </div>
+            <div class="dtc tr">
+              <h2 class="f5 mv0">Rep: {{ exercise.rep }}</h2>
+            </div>
+          </div>
+          <p class="f6 lh-copy measure mt2 mid-gray">
+            {{ exercise.desc}}...
+          </p>
         </div>
       </div>
-      <p class="f6 lh-copy measure mt2 mid-gray">
-        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
-        and touch water with paw then recoil in horror.
-      </p>
-    </div>
-  </article> -->
+    </slick>
+  </div>
+  <a href="#up">up</a>
+</div>

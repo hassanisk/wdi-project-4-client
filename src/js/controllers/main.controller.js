@@ -156,6 +156,6 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
 
   $timeout(function() {
     vm.ready = true;
-  }, 2000);
+  }, 1000);
 
 }

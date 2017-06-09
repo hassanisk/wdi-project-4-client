@@ -99,18 +99,7 @@ img {
   height: 500px;
 }
 
-#biceps{
-  background: url("../images/biceps-left.png" ) no-repeat;
-
-}
-#triceps{
-  background: url("https://s3.amazonaws.com/bodyspartan-s3-offload/wp-content/uploads/2017/05/17084445/arm-workouts-triceps-anatomy.jpg");
-}#chest{
-  background: url("http://www.gymworkoutchart.com/wp-content/uploads/2017/05/Best-Upper-Chest-Workout-For-Explosive-Muscle-Gains.jpg");
-}#legs{
-  background: url("https://cdn2.omidoo.com/sites/default/files/images/headline/20121213/shutterstock117845530.jpg");
-}#abs{
-  background: url("http://cdn-maf3.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/abs7.jpg?itok=WNf3F2_n");
-}#shoulders{
-  background: url("http://build-muscle-101.com/wp-content/uploads/2014/12/shoulder-muscles.jpg");
+.cont{
+  height: 400px;
+  background: blue;
 }
