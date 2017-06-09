@@ -1,9 +1,7 @@
 <div class="mw6 center" >
-
-  <input type="text" class="search" ng-model="main.q" placeholder="Search..."><br>
-  <a href="#show"><button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button></a><br>
-  <input type="checkbox" id="level" ng-model="main.useLevel">
-  <label for="level">level</label><br>
+<input type="text" class="search" ng-model="main.q" placeholder="Search...">
+  <input class="level" type="checkbox" ng-model="main.useLevel"><br>
+  <label class="level" for="level">Difficulty Level</label>
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
   <label for="bodypart">Select bodypart</label><br>
 
@@ -17,6 +15,7 @@
     <img class="part absolute triceps zo" src="../images/triceps.png" for="r6" alt="triceps" ng-click="main.triceps()">
     <img class="part absolute back zo" src="../images/back.png" for="r7" alt="back" ng-click="main.back()">
   </div>
+  <a href="#show"><button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button></a><br>
 
   <div class=" mw6 bodypart ">
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
@@ -31,8 +30,8 @@
 <div id="show">
   <div ng-if="main.final && main.ready">
     <slick infinite="true" slides-to-show="1" init-onload="true" data="main.final" slides-to-scroll="1"  class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center ">
-      <div ng-repeat="exercise in main.final track by $index"  class="test">
-        <img class="db w-100 br2 br--top" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
+      <div ng-repeat="exercise in main.final track by $index" >
+        <img class="db w-100 br2 br--top test" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
         <div class="pa2 ph3-ns pb3-ns">
           <div class="dt w-100 mt1">
             <div class="dtc">
@@ -48,6 +47,6 @@
         </div>
       </div>
     </slick>
+    <a href="#up">up</a>
   </div>
-  <a href="#up">up</a>
 </div>
