@@ -1,9 +1,9 @@
-<div class="mw6 center" >
-<input type="text" class="search" ng-model="main.q" placeholder="Search...">
+<div class="mw6 center tc" >
+<input type="text" class="search f6 fw4" ng-model="main.q" placeholder="Search...">
   <input class="level" type="checkbox" ng-model="main.useLevel"><br>
-  <label class="level" for="level">Difficulty Level</label>
+  <label class="level f10 fw4" for="level">Difficulty Level</label>
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
-  <label for="bodypart">Select bodypart</label><br>
+  <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
 
   <div class="relative">
     <img class="human" src="../images/human.png" alt="">
@@ -15,7 +15,7 @@
     <img class="part absolute triceps zo" src="../images/triceps.png" for="r6" alt="triceps" ng-click="main.triceps()">
     <img class="part absolute back zo" src="../images/back.png" for="r7" alt="back" ng-click="main.back()">
   </div>
-  <a href="#show"><button type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">generate</button></a><br>
+<button class="b ph3 f6 fw4 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn generate tc" type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">Generate</button><br>
 
   <div class=" mw6 bodypart ">
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
