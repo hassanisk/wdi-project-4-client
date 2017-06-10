@@ -61,7 +61,9 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   })
   .state('dietsIndex', {
     url: '/diets',
-    templateUrl: '/js/views/diets/diets.html'
+    templateUrl: '/js/views/diets/diets.html',
+    controller: 'DietIndexCtrl',
+    controllerAs: 'vm'
   })
   .state('contactIndex', {
     url: '/contact/',

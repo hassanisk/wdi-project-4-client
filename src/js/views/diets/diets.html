@@ -1,1 +1,11 @@
-diets goes here
+<h1>name: {{vm.name}}</h1>
+<h2>about :{{ vm.diet.intro }}...</h2>
+<p>pros :{{ vm.diet.pros }} </p>
+<p>cons: <strong>{{ vm.diet.cons }}</strong></p>
+<p>Bodypart  <strong>{{ vm.diet.musclesname }}</strong></p>
+
+<ul>
+  <li ng-repeat="diet in vm.diets">
+    <a ui-sref="dietsIndex">{{ diet.image }}</a>
+  </li>
+</ul>

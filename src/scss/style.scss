@@ -101,7 +101,7 @@ img {
 
 .cont{
   height: 400px;
-  background: blue;
+
 }
 .test{
   height:  150px;
@@ -244,4 +244,35 @@ input[type=range]:focus::-ms-fill-upper {
 
 #logo:hover{
     animation: heartbeat 1.5s infinite;
+}
+
+.wrapping{
+border: 20px solid black;
+position: static;
+}
+
+
+.parallax {
+    background-image: url("http://www.success.com/sites/default/files/8_12.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    background-image: url("http://files.planetofsuccess.com/blog/wp-content/uploads/2015/10/stop.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/7a/d2/cd/7ad2cd9092370a6ce27fd30ee18b9cb9.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

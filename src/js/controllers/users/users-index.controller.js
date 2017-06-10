@@ -13,16 +13,4 @@ function UserIndexCtrl(User, $http){
     vm.users = response.data;
     console.log(vm.users);
   });
-  // vm.delete  = tasksDelete;
-  //
-  //
-  // function tasksDelete(task) {
-  //   Task
-  //   .remove({ id: task._id })
-  //   .$promise
-  //   .then(() => {
-  //     $state.go('tasksIndex');
-  //   });
-  // }
-
 }
