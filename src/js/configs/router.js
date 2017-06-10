@@ -59,10 +59,16 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'ExerciseShowCtrl',
     controllerAs: 'vm'
   })
-  .state('dietsIndex', {
-    url: '/diets',
-    templateUrl: '/js/views/diets/diets.html',
-    controller: 'DietIndexCtrl',
+  .state('nutritionsIndex', {
+    url: '/nutritions',
+    templateUrl: '/js/views/nutritions/index.html',
+    controller: 'NutritionIndexCtrl',
+    controllerAs: 'vm'
+  })
+  .state('nutritionsShow', {
+    url: '/nutritions/:id',
+    templateUrl: '/js/views/nutritions/show.html',
+    controller: 'NutritionShowCtrl',
     controllerAs: 'vm'
   })
   .state('contactIndex', {

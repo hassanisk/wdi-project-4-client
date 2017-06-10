@@ -1,0 +1,8 @@
+
+<ul>
+  <li ng-repeat="nutrition in vm.nutritions">
+    <a ui-sref="nutritionShow({ id: nutrition._id })">{{ nutrition.name }}</a>
+    <a ui-sref="nutritionShow({ id: nutrition._id })">{{ nutrition.image }}</a>
+
+  </li>
+</ul>
