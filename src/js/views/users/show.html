@@ -1,10 +1,12 @@
-<h1>Your profile</h1>
-<a ui-sref="#"><img  ng-src="{{ vm.user.image }}"></a>
-<div>
-  <h2>Name: {{ vm.user.username }}</h2>
-  <p>Email: {{ vm.user.email }}</p>
-</div>
-<div>
-  <button type="button" name="back" class="btn btn-warning" ui-sref="usersEdit({ id: main.user._id})">Edit</button>
-  <button type="button" class="btn btn-danger" ng-click="vm.userOpenModal()">Delete</button>
+<div class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+  <div class="tc">
+    <img ng-src="{{ vm.user.image }}" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Profile photo">
+    <h1 class="f3 mb2">UserName: {{ vm.user.username }}</h1>
+    <h2 class="f5 fw4 gray mt0">Email: {{ vm.user.email }}</h2>
+    <div>
+      <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersEdit({ id: main.user._id})">Edit</button>
+      <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="vm.userOpenModal()">Delete</button>
+    </div>
+
+  </div>
 </div>

@@ -1,38 +1,25 @@
 <div>
+  <form name="vm.editUserForm" ng-submit="vm.update()" method="put" class="measure center" novalidate>
     <h1> Update your profile</h1>
-      <form name="vm.editUserForm" ng-submit="vm.update()" method="put" novalidate>
-        <div class="form-group">
-        <label for="name">Username</label><br>
-          <input class="form-control" type="text" name="username" ng-model="vm.user.username" placeholder="{{vm.username}}" required>
-        </div>
-<!--
-        <div class="ng-message-error" ng-messages="vm.editUserForm.username.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.username.$touched)">
-          <p ng-message="required">A username is required!</p>
-        </div> -->
-
-
-
-        <div>
-          <label for="image">Image</label><br>
-          <input class="form-control" type="text" name="image" ng-model="vm.user.image" placeholder="Image" required>
-        </div>
-
-        <!-- <div class="ng-message-error" ng-messages="vm.editUserForm.image.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.image.$touched)">
-          <p ng-message="required">An image is required!</p>
-        </div> -->
-
-        <div class="form-group">
-          <label for="name">Email</label><br>
-          <input class="form-control" type="email" name="email" ng-model="vm.user.email" placeholder="hi" required>
-        </div>
-
-        <div class="ng-message-error" ng-messages="vm.editUserForm.email.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.email.$touched)">
-          <p ng-message="required">An email address is required!</p>
-        </div>
-
-        <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button>
-
-        <input class="btn btn-primary" type="submit" value="Update" />
-
-      </form>
+    <div class="mv3">
+      <label for="name" class="db fw6 lh-copy f6">Username</label><br>
+      <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="username" ng-model="vm.user.username" placeholder="{{vm.username}}" required>
+    </div>
+    <div class="ng-message-error" ng-messages="vm.editUserForm.username.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.username.$touched)">
+      <p ng-message="required">A username is required!</p>
+    </div>
+    <div>
+      <label class="db fw6 lh-copy f6" for="image">Image</label><br>
+      <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="image" ng-model="vm.user.image" placeholder="Image" required>
+    </div>
+    <div class="mv3">
+      <label class="db fw6 lh-copy f6" for="name">Email</label><br>
+      <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="email" name="email" ng-model="vm.user.email" placeholder="Update your email.." required>
+    </div>
+    <div class="ng-message-error" ng-messages="vm.editUserForm.email.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.email.$touched)">
+      <p ng-message="required">An email address is required!</p>
+    </div>
+    <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersShow({ id: vm.user._id })">Back</button>
+    <input class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" type="submit" value="Update" />
+  </form>
 </div>

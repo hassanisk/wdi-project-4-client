@@ -1,11 +1,11 @@
 <div class="mw6 center tc">
   <div class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-<input type="text" class="search f6 fw4" ng-model="main.q" placeholder="Search...">
-  <input class="level" type="checkbox" ng-model="main.useLevel"><br>
-  <label class="level f10 fw4" for="level">Difficulty Level</label>
-  <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
-  <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
-</div>
+    <input type="text" class="search f6 fw4" ng-model="main.q" placeholder="Search...">
+    <input class="level" type="checkbox" ng-model="main.useLevel"><br>
+    <label class="level f10 fw4" for="level">Difficulty Level</label>
+    <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
+    <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
+  </div>
 
   <div class="relative mt3">
     <img class="muscle human" src="../images/human.png" alt="">
@@ -40,14 +40,12 @@
           <h1 class="f6 ttu tracked tc">{{ exercise.name | uppercase}}</h1>
         </div>
         <img class="w-100 db" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
-        <div class="pa2 ph3-ns pb3-ns">
-          <div class="dt w-100 mt1">
-            <div class="dtc  tr">
-              <h2 class="f5">Rep: {{ exercise.rep }}</h2>
+        <div class="pa2  ">
+            <div class=" tr ba bl-0 br-0 b--dotted b--black-30">
+              <p class="f5"><strong>Rep: </strong>{{ exercise.rep }}</p>
             </div>
-          </div>
           <p class="ff4 lh-copy measure">
-            {{ exercise.desc}}...
+            <strong>How to: </strong>{{ exercise.desc}}...
           </p>
         </div>
       </div>
