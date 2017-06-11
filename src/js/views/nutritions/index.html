@@ -1,14 +1,12 @@
 
 <div ng-repeat="nutrition in vm.nutritions" class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns" >
   <p class="tc"><strong>{{nutrition.name}}</strong></p>
-<div class="parallax mw5 mw7-ns center bg-light-gray pa3 ph5-ns"  ng-style="{'background-image': 'url(' + nutrition.image +')', 'background-size': '50%'}">
+<div class="parallax bt bb mw5 mw7-ns center bg-light-gray pa3 ph5-ns"  ng-style="{'background-image': 'url(' + nutrition.image +')', 'background-size': '50%'}">
   </div>
-  <div  class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
-  <p ><strong>About:</strong> {{ nutrition.intro }}</p><br><br>
-  <p><strong>Pros:</strong> {{ nutrition.pros }}</p><br>
-  <p><strong>Cons:</strong> {{ nutrition.cons }}</p><br>
-  <p><strong>BDA verdict:</strong> {{ nutrition.bda }}</p><br>
-
+  <div  class="bt bb mw5 mw7-ns center bg-light-gray pa3 ph5-ns avenir">
+  <p class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30"><strong>About:</strong> {{ nutrition.intro }}</p>
+  <p class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30"><strong>Pros:</strong> {{ nutrition.pros }}</p>
+  <p class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30"><strong>Cons:</strong> {{ nutrition.cons }}</p>
+  <p class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30"><strong>BDA verdict:</strong> {{ nutrition.bda }}</p>
   </div>
-
 </div>

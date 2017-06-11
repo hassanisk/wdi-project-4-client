@@ -1,11 +1,13 @@
-<div class="mw6 center tc" >
+<div class="mw6 center tc">
+  <div class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
 <input type="text" class="search f6 fw4" ng-model="main.q" placeholder="Search...">
   <input class="level" type="checkbox" ng-model="main.useLevel"><br>
   <label class="level f10 fw4" for="level">Difficulty Level</label>
   <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
   <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
+</div>
 
-  <div class="relative">
+  <div class="relative mt3">
     <img class="human" src="../images/human.png" alt="">
     <img class="part absolute biceps zo" src="../images/biceps.png" for="r1" alt="biceps" ng-click="main.biceps()">
     <img class="part absolute legs zo" src="../images/legs.png" for="r2" alt="legsback" ng-click="main.legs()">
@@ -15,7 +17,10 @@
     <img class="part absolute triceps zo" src="../images/triceps.png" for="r6" alt="triceps" ng-click="main.triceps()">
     <img class="part absolute back zo" src="../images/back.png" for="r7" alt="back" ng-click="main.back()">
   </div>
-<button class="b ph3 f6 fw4 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn generate tc" type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">Generate</button><br>
+  <div class=" pa3 ba bl-0 bb-0 br-0 b--dotted b--black-30">
+    <button class="b ph3 f6 fw4 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn generate tc" type="button" ng-click="main.filterExercises()" name="generate" id="submitButton">Generate</button><br>
+  </div>
+
 
   <div class=" mw6 bodypart ">
     <input type="radio" ng-model="main.bodypart" name="bodypart" value="1" id="r1" checked="checked">
@@ -47,6 +52,5 @@
         </div>
       </div>
     </slick>
-    <a href="#up">up</a>
   </div>
 </div>
