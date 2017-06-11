@@ -36,18 +36,19 @@
   <div ng-if="main.final && main.ready">
     <slick infinite="true" slides-to-show="1" init-onload="true" data="main.final" slides-to-scroll="1"  class="bbg-white center mw6 ba b--black-10 mv4">
       <div ng-repeat="exercise in main.final track by $index" >
-        <div class="tc">
+        <div class="tc bb">
           <h1 class="f6 ttu tracked tc">{{ exercise.name | uppercase}}</h1>
         </div>
-        <img class="w-100 db" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
-        <div class="pa2  ">
-            <div class=" tr ba bl-0 br-0 b--dotted b--black-30">
+        <img class="w-100 db bb" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
+        <div class="pa2 ">
+            <div class=" tr ba bl-0 bt-0 br-0 b--dotted b--black-30">
               <p class="f5"><strong>Rep: </strong>{{ exercise.rep }}</p>
             </div>
           <p class="ff4 lh-copy measure">
             <strong>How to: </strong>{{ exercise.desc}}...
           </p>
         </div>
+        <a class="link tc ph3 pv1 db bg-animate bg-dark-red hover-bg-blue white f6 br1" href="#">Add to Fav</a>
       </div>
     </slick>
   </div>
