@@ -1,8 +1,10 @@
 
-<ul>
-  <li ng-repeat="nutrition in vm.nutritions">
-    <a ui-sref="nutritionShow({ id: nutrition._id })">{{ nutrition.name }}</a>
-    <a ui-sref="nutritionShow({ id: nutrition._id })">{{ nutrition.image }}</a>
+<div ng-repeat="nutrition in vm.nutritions" >
+<div class="parallax"  ng-style="{'background-image': 'url(' + nutrition.image +')'}">
+    <!-- <a ui-sref="nutritionsShow({ id: nutrition._id })"><img ng-src="{{ nutrition.image }}" alt=""></a> -->
+  </div>
+  <div style="height:500px;background-color:red;font-size:36px">
+    {{ nutrition.intro }}
+  </div>
 
-  </li>
-</ul>
+</div>
