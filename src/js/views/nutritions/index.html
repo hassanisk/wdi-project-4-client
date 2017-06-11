@@ -1,10 +1,14 @@
 
-<div ng-repeat="nutrition in vm.nutritions" >
-<div class="parallax"  ng-style="{'background-image': 'url(' + nutrition.image +')'}">
-    <!-- <a ui-sref="nutritionsShow({ id: nutrition._id })"><img ng-src="{{ nutrition.image }}" alt=""></a> -->
+<div ng-repeat="nutrition in vm.nutritions" class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns" >
+  <p class="tc"><strong>{{nutrition.name}}</strong></p>
+<div class="parallax mw5 mw7-ns center bg-light-gray pa3 ph5-ns"  ng-style="{'background-image': 'url(' + nutrition.image +')', 'background-size': '50%'}">
   </div>
-  <div style="height:500px;background-color:red;font-size:36px">
-    {{ nutrition.intro }}
+  <div  class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+  <p ><strong>About:</strong> {{ nutrition.intro }}</p><br><br>
+  <p><strong>Pros:</strong> {{ nutrition.pros }}</p><br>
+  <p><strong>Cons:</strong> {{ nutrition.cons }}</p><br>
+  <p><strong>BDA verdict:</strong> {{ nutrition.bda }}</p><br>
+
   </div>
 
 </div>
