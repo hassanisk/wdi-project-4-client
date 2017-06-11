@@ -3,6 +3,23 @@
 <head>
   <base href="/">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/67a7b04b7352a012c693b60817e0244f.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../images/67a7b04b7352a012c693b60817e0244f.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/67a7b04b7352a012c693b60817e0244f.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../images/67a7b04b7352a012c693b60817e0244f.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/67a7b04b7352a012c693b60817e0244f.ico/favicon-16x16.png">
+<link rel="manifest" href="../images/67a7b04b7352a012c693b60817e0244f.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../images/67a7b04b7352a012c693b60817e0244f.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
   <title>Angular Stack Setup</title>
   <!-- inject:js -->
   <!-- endinject -->
@@ -18,12 +35,12 @@
       <img id="logo" src="../images/logo.png" alt="">
     </a>
     <h1 class="mt2 mb0 baskerville i fw1 f1">Pocket Fit</h1>
-    <h2 class="mt2 mb0 f6 fw4 ttu tracked">Fitness app that fits in your pocket</h2>
+    <h2 class="mt2 mb0 f6 fw4 ttu tracked">A WORLD OF FITNESS THAT FITS IN YOUR POCKET</h2>
     <nav class="bt bb tc mw7 center mt4">
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="/">Home</a>
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"  ui-sref="workoutsIndex">Workouts</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ui-sref="nutritionsIndex">Nutrition</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ui-sref="aboutIndex">About</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="nutritionsIndex">Nutrition</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="aboutIndex">About</a>
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-hide="main.user" ui-sref="login">Sign In</a>
       <a ng-click="main.logout()" ng-show="main.user" class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l">Logout</a>
     </nav>

@@ -247,15 +247,37 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .wrapping{
-  border: 20px solid black;
-  position: static;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
 }
 
 
 .parallax {
   min-height: 500px;
- background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+#enjoy{
+  background: url('../images/home1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 490px;
+
+}
+#brand{
+  background: url('../images/brand.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 485px;
+}
+.trust{
+  height: 100px;
+  width: 100px;
 }
