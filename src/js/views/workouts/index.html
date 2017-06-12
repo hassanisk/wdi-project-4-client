@@ -2,12 +2,15 @@
   <div class=" pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
     <input type="text" class="search f6 fw4" ng-model="main.q" placeholder="Search...">
     <input class="level" type="checkbox" ng-model="main.useLevel"><br>
-    <label class="level f10 fw4" for="level">Difficulty Level</label>
-    <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>
-    <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
+    <label class="level f10 fw4" for="level">Difficulty Level: {{main.level}}</label>
+    <input type="range" ng-model="main.level" min="1" max="4"  ng-disabled="!main.useLevel"><br>  <img src="../images/easy.png" class="dif fl" alt="">
+    <img src="../images/medium.png" class="dif marg" alt="">
+    <img src="../images/hard.png" class="dif" alt="">
+    <img src="../images/beast.png" class="dif fr" alt="">
   </div>
 
   <div class="relative mt3">
+    <label class="f10 fw4" for="bodypart">Select bodypart</label><br>
     <img class="muscle human" src="../images/human.png" alt="">
     <img class="muscle part absolute biceps zo" src="../images/biceps.png" for="r1" alt="biceps" ng-click="main.biceps()">
     <img class="muscle part absolute legs zo" src="../images/legs.png" for="r2" alt="legsback" ng-click="main.legs()">
@@ -41,14 +44,14 @@
         </div>
         <img class="w-100 db bb" ng-src="{{ exercise.image }}" alt="{{ exercise.name }}" >
         <div class="pa2 ">
-            <div class=" tr ba bl-0 bt-0 br-0 b--dotted b--black-30">
-              <p class="f5"><strong>Rep: </strong>{{ exercise.rep }}</p>
-            </div>
+          <div class=" tr ba bl-0 bt-0 br-0 b--dotted b--black-30">
+            <p class="f5"><strong>Rep: </strong>{{ exercise.rep }}</p>
+          </div>
           <p class="ff4 lh-copy measure">
             <strong>How to: </strong>{{ exercise.desc}}...
           </p>
         </div>
-        <a ng-click="vm.addFav(exercise)"class="link tc ph3 pv1 db bg-animate bg-dark-red hover-bg-blue white f6 br1">Add to Fav</a>
+        <a ng-click="vm.addFav(exercise)" class="link tc ph3 pv1 db bg-animate bg-dark-red hover-bg-blue white f6 br1">Add to Fav</a>
       </div>
     </slick>
   </div>

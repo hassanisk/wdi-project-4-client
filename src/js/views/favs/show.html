@@ -1,0 +1,20 @@
+{{ main.user.favs }}
+
+<h1>{{ main.user.username}}</h1>
+<ul>
+  <li ng-repeat=" fav in main.user.favs">
+    <p>name: {{ fav.name }}</p>
+    <p>{{ fav.desc }}</p>
+    <p>Level: {{ fav.difficulty }}</p>
+    <p>Bodypart: {{ fav.muscelsname }}</p>
+    <img ng-src="{{ fav.image }}" alt="">
+    <button ng-click="main.removeFav(fav)" name="Remove">Remove from favs</button>
+  </li>
+</ul>
+
+
+<!-- <h2>{{ main.user.favs[0] }}...</h2>
+<p>description :{{ main.user.favs.desc }} </p>
+<p>Level <strong>{{ main.user.favs.difficulty }}</strong></p>
+<p>Bodypart  <strong>{{main.user.favs.musclesname }}</strong></p>
+<img ng-src="{{ vm.exercise.image }}" alt="{{ vm.exercise.name }}" > -->

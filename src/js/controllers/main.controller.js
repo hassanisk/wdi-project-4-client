@@ -166,6 +166,18 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       });
   }
 
+  vm.removeFav = removeFav;
+
+  function removeFav(fav) {
+    console.log(fav);
+    Fav
+      .remove(fav)
+      .$promise
+      .then(() => {
+        console.log('Favourite has successfully been destroyed for all eternity');
+      });
+  }
+
   $timeout(function() {
     vm.ready = true;
   }, 1000);

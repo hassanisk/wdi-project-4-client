@@ -1,12 +1,12 @@
 <div class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
   <div class="tc">
     <img ng-src="{{ vm.user.image }}" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Profile photo">
-    <h1 class="f3 mb2">UserName: {{ vm.user.username }}</h1>
-    <h2 class="f5 fw4 gray mt0">Email: {{ vm.user.email }}</h2>
+    <h1 class="f6 fw4 gray mt0">Username:<br> <span  class="f3 black mb2" >{{ vm.user.username }}</span></h1>
+    <h2 class="f6 fw4 gray mt0">Email: <span  class="f4 black mb2">{{ vm.user.email }}</span></h2>
     <div>
       <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersEdit({ id: main.user.id})">Edit</button>
       <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="vm.delete()">Delete</button>
-      <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="main.logout()">Logout</button>
+
     </div>
   </div>
 </div>

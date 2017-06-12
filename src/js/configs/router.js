@@ -71,6 +71,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'NutritionShowCtrl',
     controllerAs: 'vm'
   })
+  .state('favsShow', {
+    url: '/users/:id/fav',
+    templateUrl: '/js/views/favs/show.html',
+    controller: 'MainCtrl',
+    controllerAs: 'vm'
+  })
   .state('contactIndex', {
     url: '/contact/',
     templateUrl: '/js/views/contact/contact.html'

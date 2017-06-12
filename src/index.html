@@ -38,8 +38,27 @@
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"  ui-sref="workoutsIndex">Workouts</a>
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="nutritionsIndex">Nutrition</a>
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-hide="main.user" ui-sref="login">Sign In</a>
+
+
+<!--
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="favsShow({id: main.user.id })">fav</a>
       <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="usersShow({id: main.user.id })">My Profile</a>
+
+ -->
+      <div class="dropdown">
+        <a class=" f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" ng-show="main.user" ui-sref="usersShow({id: main.user.id })">My Profile</a>
+        <div class="dropdown-content">
+          <a ui-sref="favsShow({id: main.user.id })" class="f6 f5-l link bg-animate black-80 hover-bg-red dib pa3 ph4-l">Favourites</a>
+          <a ui-sref="usersEdit({ id: main.user.id})" class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l">Edit Profile</a>
+          <a ng-click="main.logout()" class=" f6 f5-l link bg-animate black-80 hover-bg-light-purple dib pa3 ph4-l">Logout</a>
+        </div>
+      </div>
     </nav>
+
+
+
+
+
   </header>
   <main ui-view></main>
   <footer class="pv4 ph3 ph5-ns tc">
