@@ -4,8 +4,8 @@
     <h1 class="f3 mb2">UserName: {{ vm.user.username }}</h1>
     <h2 class="f5 fw4 gray mt0">Email: {{ vm.user.email }}</h2>
     <div>
-      <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersEdit({ id: main.user._id})">Edit</button>
-      <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="usersDelete()">Delete</button>
+      <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersEdit({ id: main.user.id})">Edit</button>
+      <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="vm.delete()">Delete</button>
       <button type="button" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ng-click="main.logout()">Logout</button>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <h1> Update your profile</h1>
     <div class="mv3">
       <label for="name" class="db fw6 lh-copy f6">Username</label><br>
-      <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="username" ng-model="vm.user.username" placeholder="{{vm.username}}" required>
+      <input class="pl pa2 input-reset ba bg-transparent grow w-100" type="text" name="username" ng-model="vm.user.username" placeholder="{{vm.user.username}}" required>
     </div>
     <div class="ng-message-error" ng-messages="vm.editUserForm.username.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.username.$touched)">
       <p ng-message="required">A username is required!</p>
@@ -19,7 +19,7 @@
     <div class="ng-message-error" ng-messages="vm.editUserForm.email.$error" ng-show="(vm.editUserForm.$submitted || vm.editUserForm.email.$touched)">
       <p ng-message="required">An email address is required!</p>
     </div>
-    <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersShow({ id: vm.user._id })">Back</button>
+    <button type="button" name="back" class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" ui-sref="usersShow({ id: vm.user.id })">Back</button>
     <input class="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib apply-btn" type="submit" value="Update" />
   </form>
 </div>
