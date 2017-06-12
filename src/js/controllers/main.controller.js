@@ -3,8 +3,8 @@ angular
 .controller('MainCtrl', MainCtrl);
 
 
-MainCtrl.$inject = ['$rootScope','CurrentUserService','$state','$scope', 'filterFilter', 'Exercise', '$timeout'];
-function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Exercise, $timeout) {
+MainCtrl.$inject = ['$rootScope','CurrentUserService','$state','$scope', 'filterFilter', 'Exercise', '$timeout','Fav'];
+function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Exercise, $timeout, Fav) {
   const vm  = this;
   vm.all    = Exercise.query();
   $rootScope.$on('loggedIn', () => {
@@ -153,6 +153,18 @@ function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Ex
       vm.bodypart = backButton.value;
     }
   };
+  vm.addFav = addFav;
+
+  function addFav(exercise) {
+    // setting user_id to be the current user
+    exercise.user_id = CurrentUserService.currentUser.id;
+    Fav
+      .save(exercise)
+      .$promise
+      .then(() => {
+        console.log('Favourite succeffsully created');
+      });
+  }
 
   $timeout(function() {
     vm.ready = true;
