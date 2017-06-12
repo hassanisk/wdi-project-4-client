@@ -1,20 +1,23 @@
-{{ main.user.favs }}
 
-<h1>{{ main.user.username}}</h1>
-<ul>
-  <li ng-repeat=" fav in main.user.favs">
-    <p>name: {{ fav.name }}</p>
-    <p>{{ fav.desc }}</p>
-    <p>Level: {{ fav.difficulty }}</p>
-    <p>Bodypart: {{ fav.muscelsname }}</p>
-    <img ng-src="{{ fav.image }}" alt="">
-    <button ng-click="main.removeFav(fav)" name="Remove">Remove from favs</button>
-  </li>
-</ul>
+<div class="tc bb">
+  <div class="bbg-white center mw6 bl-0 br-0 b--black-10 mv4 mb5">
+  <div ng-repeat=" fav in main.user.favs" class="bb mb6" >
+    <h1 class="f6 ttu tracked tc bt mt2">name: {{ fav.name }}</h1>
+    <img class="w-100 db" ng-src="{{ fav.image }}" alt="">
+    <div class="pa2 ">
+      <div class=" ba bl-0 bt-0 br-0 b--dotted b--black-30">
+        <p class="f5"><strong>Rep: </strong>{{ fav.rep }}</p>
+        <p class="f5"><strong>Level: </strong>{{ fav.difficulty }}</p>
+        <p class="f5"><strong>Bodypart: </strong>{{ fav.muscelsname }}</p>
+      </div>
+      <p class="ff4 lh-copy measure">
+        <strong>How to: </strong>{{ fav.desc}}...
+      </p>
+    </div>
+<div class="center ">
+   <a href="#"><img src="../images/remove.png" ng-click="main.removeFav(fav)" name="Remove" class="button link tc ph3 pv1 db white f6 br1"></a>
+</div>
 
-
-<!-- <h2>{{ main.user.favs[0] }}...</h2>
-<p>description :{{ main.user.favs.desc }} </p>
-<p>Level <strong>{{ main.user.favs.difficulty }}</strong></p>
-<p>Bodypart  <strong>{{main.user.favs.musclesname }}</strong></p>
-<img ng-src="{{ vm.exercise.image }}" alt="{{ vm.exercise.name }}" > -->
+  </div>
+  </div>
+</div>

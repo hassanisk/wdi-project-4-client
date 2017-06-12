@@ -8,7 +8,7 @@ function Exercise() {
   const all = [{
     // biceps ========== ========= biceps============================= biceps====================
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -17,7 +17,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -26,7 +26,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -35,7 +35,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -44,7 +44,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -53,7 +53,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -62,7 +62,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -71,7 +71,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -80,7 +80,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -89,7 +89,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -98,7 +98,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -107,7 +107,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Hammer Curls',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -116,7 +116,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Zottman Curl',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -125,7 +125,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Wide-grip standing barbell curl',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -134,7 +134,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'EZ Bar Curl',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -143,7 +143,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Standing Concentration Curl',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -152,7 +152,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Incline Inner-Biceps Curl.',
     desc: 'this is an awesome exercises',
     rep: '10*10*10',
@@ -161,7 +161,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Biceps curls',
     desc: 'this is an Easy exercises',
     rep: '10*10*10',
@@ -170,7 +170,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Biceps preach',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -180,7 +180,7 @@ function Exercise() {
 
   },{
     bodypart: '1',
-    musclesname: 'Biceps',
+    muscelsname: 'Biceps',
     name: 'Biceps cable',
     desc: 'this is a Medium exercises',
     rep: '10*10*10*10',
@@ -191,7 +191,7 @@ function Exercise() {
   },{
     // legs =================== legs============================= legs====================
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Squat',
     desc: 'This is a Hard exercises',
     rep: '10*10*10*10',
@@ -200,7 +200,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -209,7 +209,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -218,7 +218,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -227,7 +227,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -236,7 +236,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -245,7 +245,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -254,7 +254,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -263,7 +263,7 @@ function Exercise() {
     difficulty: 'Hard!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -272,7 +272,7 @@ function Exercise() {
     difficulty: 'Hard!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -281,7 +281,7 @@ function Exercise() {
     difficulty: 'Hard!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -290,7 +290,7 @@ function Exercise() {
     difficulty: 'Hard!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -299,7 +299,7 @@ function Exercise() {
     difficulty: 'Hard!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -308,7 +308,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -317,7 +317,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -326,7 +326,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -335,7 +335,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Hack Squat',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -344,7 +344,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Romanian Deadlift',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -353,7 +353,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Front Squat.',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -362,7 +362,7 @@ function Exercise() {
     difficulty: 'Savage!'
   },{
     bodypart: '2',
-    musclesname: 'Legs',
+    muscelsname: 'Legs',
     name: 'Dumbbell Lunges.',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -373,7 +373,7 @@ function Exercise() {
 
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -382,7 +382,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -391,7 +391,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -400,7 +400,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -409,7 +409,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -418,7 +418,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -427,7 +427,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -436,7 +436,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -445,7 +445,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -454,7 +454,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -463,7 +463,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -472,7 +472,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -481,7 +481,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -490,7 +490,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -499,7 +499,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -508,7 +508,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -517,7 +517,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -526,7 +526,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -535,7 +535,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -544,7 +544,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '3',
-    musclesname: 'Chest',
+    muscelsname: 'Chest',
     name: 'Bench Press',
     desc: 'this is a Hard exercises',
     rep: '10*10*10*10',
@@ -554,7 +554,7 @@ function Exercise() {
   },{
     // abs =================== abs============================= abs====================
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -563,7 +563,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -572,7 +572,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -581,7 +581,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -590,7 +590,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -599,7 +599,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -608,7 +608,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -617,7 +617,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -626,7 +626,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -635,7 +635,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -644,7 +644,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -653,7 +653,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -662,7 +662,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -671,7 +671,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -680,7 +680,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -689,7 +689,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -698,7 +698,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -707,7 +707,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -716,7 +716,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -725,7 +725,7 @@ function Exercise() {
     difficulty: 'Beast Mode'
   },{
     bodypart: '4',
-    musclesname: 'Abs',
+    muscelsname: 'Abs',
     name: 'crunches',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -735,7 +735,7 @@ function Exercise() {
     // shoulder =================== shoulder============================= shoulder====================
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -744,7 +744,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -753,7 +753,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -762,7 +762,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -771,7 +771,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -780,7 +780,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -789,7 +789,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -798,7 +798,7 @@ function Exercise() {
     difficulty: 'Medium'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -807,7 +807,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -816,7 +816,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -825,7 +825,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -834,7 +834,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -843,7 +843,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -852,7 +852,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -861,7 +861,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -870,7 +870,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -879,7 +879,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -888,7 +888,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -897,7 +897,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -906,7 +906,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '5',
-    musclesname: 'Delts',
+    muscelsname: 'Delts',
     name: 'shoulder press',
     desc: 'this is a Easy exercises',
     rep: '10*10*10*10',
@@ -916,7 +916,7 @@ function Exercise() {
   },{
       // tri =================== tri============================= tir====================
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'triceps extension',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -925,7 +925,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Dumbbell Overhead Triceps Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -934,7 +934,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Triceps Dip',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -943,7 +943,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Lying Triceps Extension (Skullcrusher)',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -952,7 +952,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Triceps Pushdown',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -961,7 +961,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'V-Bar Pulldown',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -970,7 +970,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -979,7 +979,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -988,7 +988,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -997,7 +997,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1006,7 +1006,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1015,7 +1015,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1024,7 +1024,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1033,7 +1033,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1042,7 +1042,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1051,7 +1051,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1060,7 +1060,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1069,7 +1069,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1078,7 +1078,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '6',
-    musclesname: 'Triceps',
+    muscelsname: 'Triceps',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1088,7 +1088,7 @@ function Exercise() {
     //backk---------back----------
   }, {
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'triceps extension',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1097,7 +1097,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Dumbbell Overhead Back Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1106,7 +1106,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Back Dip',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1115,7 +1115,7 @@ function Exercise() {
     difficulty: 'Easy'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Lying Back Extension (Skullcrusher)',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1124,7 +1124,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Back Pushdown',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1133,7 +1133,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'V-Bar Pulldown',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1142,7 +1142,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1151,7 +1151,7 @@ function Exercise() {
     difficulty: 'Medium!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1160,7 +1160,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1169,7 +1169,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1178,7 +1178,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1187,7 +1187,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1196,7 +1196,7 @@ function Exercise() {
     difficulty: 'Hard'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1205,7 +1205,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1214,7 +1214,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1223,7 +1223,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1232,7 +1232,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1241,7 +1241,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
@@ -1250,7 +1250,7 @@ function Exercise() {
     difficulty: 'Beast Mode!'
   },{
     bodypart: '7',
-    musclesname: 'Back',
+    muscelsname: 'Back',
     name: 'Close-Grip Bench Press.',
     desc: 'this is a Easy exercises',
     rep: '5 sets of 12 reps',
