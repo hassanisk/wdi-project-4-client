@@ -7,10 +7,11 @@ MainCtrl.$inject = ['$rootScope','CurrentUserService','$state','$scope', 'filter
 function MainCtrl($rootScope,CurrentUserService,$state, $scope, filterFilter, Exercise, $timeout, Fav) {
   const vm  = this;
   vm.all    = Exercise.query();
+
   $rootScope.$on('loggedIn', () => {
     vm.user = CurrentUserService.currentUser;
-    // $state.go('tasksIndex'); //needs to be fixed
   });
+
   vm.logout = () => {
     CurrentUserService.removeUser();
   };
