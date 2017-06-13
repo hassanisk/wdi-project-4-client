@@ -1,4 +1,4 @@
 angular
 .module('gymApp')
 .constant('API',
-`api`);
+`http://localhost:3000/api`);
