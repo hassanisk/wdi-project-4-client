@@ -1,64 +1,74 @@
-### Using this Angular Gulp Setup
+#WDI-Project-4
 
-To get setup with the starter-code, you first need to run:
+Welcome to **"Pocket Fit"** fitness web application. Fourth project for *WDI-LONDON* using ***Ruby on Rails*** and ***AngularJS***.
+The app could be found here: [Pocket FIt] (https://pocket-fit.herokuapp.com/)
 
-```sh
-$ bower install && gulp install
-```
 
-## How is gulp setup?
+##Introduction
+After long years of working out at the gym, I got stuck into routine of doing the same exercises. I had an idea of creating an app which allows you to generate a random workout. **Pocket Fit** is a modern fitness app targeted towards any fitness lover.
 
-Rather than trying to manage one giant `gulpfile.js` that is file responsible for creating multiple tasks, each task has been broken out into its own file and placed in a directory `tasks`. Any files in that directory get automatically required in the gulpfile using the `require-dir` npm package.
+##Planning
+###Database Design<hr>
 
-To add a new task, simply add a new task file that directory.
+<img width="476" alt="database" src="http://i.imgur.com/oJr68ay.png"> <br>
+First step was planning the databeses models and relationships. I started drawing the relationships on ***Pages***.<br> Then when I decided, I showed the TA's and discussed how could I improve it.<br><br>
 
-/tasks/default.js specifies the default set of tasks to run
-when you run `gulp`.
+###Trello<hr>
+<img width="476" alt="trello" src="http://i.imgur.com/4wcKzCY.png"> <br>
+This project had 12 days deadline. I used ***Trello*** to manage my time, divide day by day tasks, set priorities using colorful labels and to keep track the progess.<br><br>
 
-Configuration options are stored in the `package.json` file.
+ 
+###Pseudocoding<hr>
+I always make sure to start with pseudocoding to be clear and refer to it when its needed.<br><br>
 
-When deploying, ensure that a `postinstall` script has been added to
-your package.json, e.g.
 
-```json
-"postinstall": "bower install && gulp deploy"
-```
+##Bulding the APIs
 
-This setup expects that there is a bower.json file with at least ONE package
-installed. This will created a bower_components directory after
-the postinstall script has run.
+###Authentication<hr>
+The first step was creating the user model with authentication using ***Insomnia*** cross-platform application to test and debugging HTTP requests.<br>
+Then, I moved to the front end to build the register and login pages and test them.<br>
+###Exercise, Favourites, and Diet Models<hr>
+This step was very important since the whole app functionality relies on it. After clear planning, creating the tables was straight forward.<br>
+Exercise and diet models were two stand-alone tables and Favourites table has a "one to many" relationship with the user model.
 
-When deploying, this setup expects that the NODE_ENV is set to `production`.
-Also that the NPM_CONFIG_PRODUCTION is set to `false`. Then you can also set the API_URL to be the correct URL for your deployed app. This will automatically replace `http://localhost:4000` to be the correct url.
 
-You can do this by running:
 
-```bash
-$ heroku config:set NODE_ENV=production
-$ heroku config:set NPM_CONFIG_PRODUCTION=false
+##Creating the workout generator
 
-# An example url
-$ heroku config:set API_URL=https://project-on-heroku.herokuapp.com/
-```
+###Navigation and layout<hr>
+I decided to have an easy modern UI, definitely mobile friendly where the user could use it at the gym or anywhere else.
+The user could use his thumb to swipe the carousals on the front page or the generated exercises.
 
-### Bower overrides
 
-Sometimes, you might want to `override` the `main` file(s) for a specific Bower component. You can do this directly inside the `bower.json` file like this:
+###Design<hr>
+![Alt Text](https://media.giphy.com/media/3o7btOG4nxbFguLMNW/giphy.gif)<br><br>
 
-```json
-"overrides": {
-  "bootstrap": {
-    "main": [
-      "dist/css/bootstrap.css",
-      "dist/js/bootstrap.js",
-      "dist/fonts/*"
-    ]
-  },
-  "font-awesome": {
-    "main": [
-      "css/font-awesome.css",
-      "fonts/*"
-    ]
-  }
-},
-```
+
+At the beginning, I started with placing the image that will be sitting on the back layer. Then, by using ***Photoshop***, I used the same image to cut the muscles to be on front layer. After that, I placed those new created images and placed them on top of the main image and changed their opacity to 0 and to 1 when the user hover or click on them.<br><br>
+![Alt Text](https://media.giphy.com/media/3o7btODgQDo9ebGCiI/giphy.gif)<br>
+
+##Further Work
+I would like to add more complexity to the workouts generator, adding more options like "home workout", "free weights" and more.<br>
+In addition, adding meals planner would be ideal.
+
+##Tools
+
+**"Pocket Fit"** was built with:<br>
+- HTML5<br>
+- SCSS <br>
+- Ruby on Rails <br>
+- Potsgres SQL<br>
+- AngularJS<br>
+- Tachyons CSS Framework<br>
+- Gulp<br>
+- Trello<br>
+- Insomnia<br>
+- [Slick.js] (https://Slick.js/) for the carousels<br>
+- Adobe Photoshop<br>
+
+##Credit
+- Diets from [nhs.uk/] (www.nhs.uk/) 
+- Exercises from [Bodybuilding.com] (https://www.bodybuilding.com)
+
+
+
