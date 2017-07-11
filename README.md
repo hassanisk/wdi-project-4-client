@@ -1,8 +1,7 @@
 #WDI-Project-4
 
 Welcome to **"Pocket Fit"** fitness web application. Fourth project for *WDI-LONDON* using ***Ruby on Rails*** and ***AngularJS***.
-The app could be found here: [Pocket FIt] (https://pocket-fit.herokuapp.com/)
-
+A hosted version is found [here] (https://pocket-fit.herokuapp.com/). The code can be viewed [here] (https://github.com/hassanisk/wdi-project-4-client).
 
 ##Introduction
 After long years of working out at the gym, I got stuck into routine of doing the same exercises. I had an idea of creating an app which allows you to generate a random workout. **Pocket Fit** is a modern fitness app targeted towards any fitness lover.
